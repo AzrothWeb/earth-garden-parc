@@ -1,0 +1,82 @@
+<?php
+
+    function touteLesPages(){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "SELECT * FROM gest_page ";
+        return($connexion->select($sql));
+    }
+
+    function recupPage($id_gp){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "SELECT * FROM gest_page WHERE id_gp = " . $id_gp;
+        return($connexion->select($sql));
+    }
+
+    function tousLesTemplates(){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "SELECT * FROM template";
+        return($connexion->select($sql));   
+    }
+
+    function ajouterPage($titre_gp, $content_gp){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "INSERT INTO gest_page(titre_gp, content_gp,id_template) VALUES('" . $titre_gp . "','" . addslashes($content_gp) . "', id_template =" . $id_template .")";
+        $connexion->insert($sql);
+        return "La page à été ajoutée";
+    }
+
+    function editerPage($titre_gp, $content_gp,$id_template, $id_gp){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "UPDATE gest_page SET titre_gp='" . $titre_gp . "', content_gp='" . $content_gp . "', id_template = ". $id_template." WHERE id_gp=" . $id_gp;
+        $retour = $connexion->update_delete($sql);
+        //Si $retour est different de zero alors
+        if ($retour != 0){
+            return "La page a été modifiée";
+        //Sinon
+        } else {
+            return "La modification n'est pas faite.";
+        }
+    }
+
+    function supprimerPage($id_gp){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "DELETE FROM gest_page WHERE id_gp=" .$id_gp;
+        $retour = $connexion->update_delete($sql);
+        //Si $retour est different de zero alors
+        if ($retour != 0){
+            return "La page a été supprimée";
+        //Sinon
+        } else {
+            return "La suppression n'est pas faite.";
+        }
+    }
+    function recupLocations(){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "SELECT COUNT(*) as total FROM article NATURAL JOIN media WHERE id_type= 2";
+        return $connexion->select($sql);
+    }
+    function recupBilleterie(){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "SELECT * FROM billeterie";
+        return $connexion->select($sql);
+    }
+    function recupActivites(){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "SELECT * FROM article NATURAL JOIN media WHERE id_type= 1 AND id_type= 3" ;
+        return $connexion->select($sql);
+    }
+    function recupDebuter(){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "SELECT * FROM article NATURAL JOIN media WHERE id_type= 3" ;
+        return $connexion->select($sql);
+    }
