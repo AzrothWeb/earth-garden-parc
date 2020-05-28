@@ -62,6 +62,10 @@
                 require_once('./controller/admin/controllerArticle.php');
                 afficherResultatArticle();
             break;
+            case 'gestion-location':
+                require_once('./controller/admin/controllerLocation.php');
+                afficherGestionLocation();
+            break;
             case 'gestion-page' : 
                 require_once('./controller/admin/controllerPage.php');
                 gestionPage();

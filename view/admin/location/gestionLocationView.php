@@ -10,7 +10,7 @@
         </thead>
         <tbody>
             <?php
-            foreach ($resultatArticle as $result) { ?>
+            foreach ($resultatLocation as $result) { ?>
                 <tr>
                     <td><?php echo $result->titre_article ?></td>
                     <td><?php echo substr($result->contenu_article, 0, 50)  ?></td>
@@ -18,13 +18,13 @@
                     <td>
                         <form action="index" method="get">
                             <input type="hidden" name="id_article" value="<?php echo $result->id_article ?>">
-                            <input type="hidden" name="page" value="edition-article">
+                            <input type="hidden" name="page" value="edition-location">
                             <button class="btn btn-success" type="submit"><i class='fas fa-edit'></i></button>
                         </form>
                     </td>
                     <td>
                         <form action="index" method="get">
-                            <input type="hidden" name="page" value="resultat-article">
+                            <input type="hidden" name="page" value="resultat-location">
                             <input type="hidden" name="mode" value="delete">
                             <input type="hidden" name="id_article" value="<?php echo $result->id_article ?>">
                             <button class="btn btn-danger" type="submit"><i class='fas fa-trash-alt'></i></button>
@@ -34,5 +34,5 @@
             <?php } ?>
         </tbody>
     </table>
-    <a class="btn btn-primary" href="index?page=ajout-article">Ajouter une Location</a>
+    <a class="btn btn-primary" href="index?page=ajout-location">Ajouter une Location</a>
 </div>
