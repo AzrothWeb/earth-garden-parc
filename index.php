@@ -70,6 +70,10 @@
                 require_once('./controller/admin/controllerLocation.php');
                 afficherAjoutLocation();
             break;
+            case 'edition-location':
+                require_once('./controller/admin/controllerLocation.php');
+                afficherEditionLocation();
+            break;
             case 'resultat-location':
                 require_once('./controller/admin/controllerLocation.php');
                 afficherResultatLocation();
