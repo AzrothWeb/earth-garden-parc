@@ -66,6 +66,14 @@
                 require_once('./controller/admin/controllerLocation.php');
                 afficherGestionLocation();
             break;
+            case 'ajout-location':
+                require_once('./controller/admin/controllerLocation.php');
+                afficherAjoutLocation();
+            break;
+            case 'resultat-location':
+                require_once('./controller/admin/controllerLocation.php');
+                afficherResultatLocation();
+            break;
             case 'gestion-page' : 
                 require_once('./controller/admin/controllerPage.php');
                 gestionPage();
