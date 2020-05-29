@@ -78,6 +78,22 @@
                 require_once('./controller/admin/controllerLocation.php');
                 afficherResultatLocation();
             break;
+            case 'gestion-formation':
+                require_once('./controller/admin/controllerFormation.php');
+                afficherGestionFormation();
+            break;
+            case 'ajout-formation':
+                require_once('./controller/admin/controllerFormation.php');
+                afficherAjoutFormation();
+            break;
+            case 'edition-formation':
+                require_once('./controller/admin/controllerFormation.php');
+                afficherEditionFormation();
+            break;
+            case 'resultat-formation':
+                require_once('./controller/admin/controllerFormation.php');
+                afficherResultatFormation();
+            break;
             case 'gestion-page' : 
                 require_once('./controller/admin/controllerPage.php');
                 gestionPage();

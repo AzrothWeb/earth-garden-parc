@@ -71,7 +71,12 @@ $session_id = session_id();
                     Gestion de location
                 </a>
             </li>
-
+            <li class="nav-item">
+                <a href="index?page=gestion-formation" class="nav-link text-dark font-italic">
+                <i class="far fa-clipboard mr-3 text-primary fa-fw"></i>
+                    Gestion de formation
+                </a>
+            </li>
         </ul>
 
     </div>
