@@ -15,7 +15,7 @@ $session_id = session_id();
 
 
 <head>
-    <title>Sidebar2</title>
+    <title>EARTH-Garden-Parc</title>
     <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL; ?>/assets/css/bootstrap.min.css">
     <link media="all" type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
