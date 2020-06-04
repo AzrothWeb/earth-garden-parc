@@ -3,7 +3,7 @@
     $postParams = isset($_POST) ? $_POST : null;
     $params = [
         "get"  => $getParams,
-        "post" => $postParams   
+        "post" => $postParams
     ];
     if (isset($_GET['page'])){
         switch ($_GET['page']) {
@@ -18,6 +18,7 @@
             case 'location' :
                 require_once('./controller/site/controllerSite.php');
                 afficherLocation();
+            break;
             case 'espace-client' :
                 require_once('./controller/site/controllerUtilisateur.php');
                 afficherEspaceClient();
@@ -26,7 +27,7 @@
                 require_once('./controller/site/controllerUtilisateur.php');
                 resultatUtilisateur($postParams);
                 break;
-            case 'gestion-site':
+           case 'gestion-site':
                 require_once('./controller/admin/controllerAdmin.php');
                 afficherTableauDeBord();
             break;
@@ -46,7 +47,7 @@
                 require_once('./controller/admin/controllerUser.php');
                 afficherResultatUser();
             break;
-            case 'gestion-article': 
+              case 'gestion-article': 
                 require_once('./controller/admin/controllerArticle.php');
                 afficherGestionArticle();
             break;
@@ -133,6 +134,30 @@
             case "benevole":
                 require_once('./controller/site/controllerSite.php');
                 afficherBenevole();
+            break;
+            case "sidebar":
+                require_once('./controller/site/controllerSite.php');
+                afficherSidebar();
+            break;
+            case "zoo":
+                require_once('./controller/site/controllerSite.php');
+                afficherZoo();
+            break;
+            case "playful":
+                require_once('./controller/site/controllerSite.php');
+                afficherPlayful();
+            break;
+            case "garden":
+                require_once('./controller/site/controllerSite.php');
+                afficherGarden();
+            break;
+            case "accueil1":
+                require_once('./controller/site/controllerAccueil.php');
+                afficherAccueil1();
+            break;
+            case 'galerie':
+                require_once('./controller/admin/controllerGalerie.php');
+                afficherGalerie();
             break;
         }
     } else {

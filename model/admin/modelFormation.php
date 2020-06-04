@@ -30,7 +30,7 @@ function editFormation()
     require_once(realpath(__DIR__ . '/../../class/connexion.php'));
     require_once(realpath(__DIR__ . '/../../config.php'));
     $connexion = new Connexion(NOM_BDD);
-    $sqlEdit = "UPDATE article SET titre_article = '" . $_GET['titre'] . "', contenu_article = '" . $_GET['contenu'] . "', prix_article = '" . $_GET['prix'] . "' WHERE id_article = " . $_GET['id_article'];
+    $sqlEdit = "UPDATE article SET titre_article = '" . $_GET['titre'] . "', contenu_article = '" . $_GET['contenu'] . "', prix_article = " . $_GET['prix'];
     return $connexion->update_delete($sqlEdit);
 }
 

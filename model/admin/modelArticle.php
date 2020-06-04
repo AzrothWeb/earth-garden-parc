@@ -6,6 +6,12 @@
         $connexion = new Connexion(NOM_BDD);
         return $connexion->select("SELECT * FROM article NATURAL JOIN category WHERE id_type=1");
     }
+    function recupNbArticles(){
+        require_once(realpath(__DIR__.'/../../class/connexion.php'));
+        require_once(realpath(__DIR__.'/../../config.php'));
+        $connexion = new Connexion(NOM_BDD);
+        return $connexion->select("SELECT COUNT(*) AS total FROM article WHERE id_type=1");
+    }
 
     function recupCategory(){
         require_once(realpath(__DIR__.'/../../class/connexion.php'));

@@ -126,3 +126,9 @@ thead {
   flex-direction: column;
   margin-bottom: 35px;
 }
+
+/*CSS Galerie*/
+.btnSupp{
+  position: relative;
+  bottom: 38px;
+}

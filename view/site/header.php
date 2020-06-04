@@ -25,9 +25,9 @@
        session_start();
     ?>
     <body>
-        <div class="container-lg">
+        <!-- <div class="container-lg"> -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav id="nav"class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="index"><img src="./assets/img/logo1.png" alt="Logo Earth Garden Park" title="Logo Earth Garden Parc" witdh="150px" height="150px"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -66,8 +66,12 @@
                             <a class="nav-link" href="index?page=benevole">Devenir Bénévole</a>
                         </div>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index?page=accueil1">Index</a>
+                        </li> 
                     </ul>
                 </div>
             </nav>
         </header>
         <main>
+        <div class="container-lg">

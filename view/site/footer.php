@@ -23,7 +23,7 @@
                 <a href="https://entrepreneurs-animaliers.fr/"> <img src="./assets/img/partenaire4.gif" alt="image_partenaire" title="entrepreneurs-animaliers" width="15%"></a>
             </div>
             <div class="text-right">
-                <?php 
+                 <?php 
                     if (isset($_SESSION['user'])){?>
                         <a href="index.php?page=espace-client" class="connexion"><img src="./assets/img/connexionok.gif" alt="Connexion" title="Se Connecter" witdh="50px" height="50px"></a>
                 <?php } else {

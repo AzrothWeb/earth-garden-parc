@@ -57,7 +57,7 @@
                                             <p class="card-text">Ferme Pédagogique pouvant être visitée. Encadré par des professionels. </p>
                                             <ul class="list-inline">
                                                 <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="<?php echo LOCAL_URL;?>/#.php">
+                                                    <a class="social-icon text-xs-center" href="<?php echo LOCAL_URL;?>/index?page=zoo">
                                                         <button class="ensavoirplus">En savoir plus</button>
                                                     </a>
                                                 </li>
@@ -89,7 +89,7 @@
                                             <p class="card-text">Jardin de permaculture bio afin de préserver la biodiversité des sols.</p>
                                             <ul class="list-inline">
                                                 <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="<?php echo LOCAL_URL;?>/#.php">
+                                                    <a class="social-icon text-xs-center"href="<?php echo LOCAL_URL;?>/index?page=garden">
                                                         <button class="ensavoirplus">En savoir plus</button>
                                                     </a>
                                                 </li>
@@ -127,7 +127,7 @@
                                         <p class="card-text">Espace d'accueil pour les activités en famille.</p>
                                         <ul class="list-inline">
                                             <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="<?php echo LOCAL_URL;?>/#.php">
+                                                <a class="social-icon text-xs-center" href="<?php echo LOCAL_URL;?>/index?page=playful">
                                                     <button class="ensavoirplus">En savoir plus</button>
                                                 </a>
                                             </li>

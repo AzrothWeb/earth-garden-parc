@@ -1,6 +1,10 @@
-      <div class="bg-volontaire"></div>
 <div class="row">
     <div class="container">
+        <img src="<?php echo LOCAL_URL;?>/assets/img/volontaire.png" alt="volontaire" title="volontaire" width="50%" height="auto" class="imgvolontaire">
+    </div>
+</div>
+<div class="row">
+    <div class="container"> 
       <div class="text-sm-center">
           <h2>
             <a class="lien" data-toggle="collapse" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
@@ -91,10 +95,10 @@
 <!--Accordeon des petites choses à savoir-->
    <div class="col-12">
     <div class="accordion" id="accordionExample">
-        <div class="card">
+        <div class="card" style="background-color:whitesmoke">
             <div class="card-header" id="headingOne">
                 <h2>
-                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <button class="btn btn-link btn-block text-left collapsed" id="link"type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     Généralités
                     </button>
                 </h2>
@@ -111,7 +115,7 @@
         <div class="card">
             <div class="card-header" id="headingTwo">
                 <h2>
-                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button id="link"class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Qu'est-ce que le Bénévolat ?
                     </button>
                  </h2>
@@ -130,10 +134,10 @@
                  </div>
             </div>
         </div>
-    <div class="card">
+    <div class="card" style="background-color:whitesmoke">
         <div class="card-header" id="headingThree">
         <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button id="link" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
             Des informations pour vous sensibiliser...
             </button>
         </h2>
@@ -146,11 +150,11 @@
 
             </div>
         </div>
-    </div>
+    </div> 
     <div class="card">
         <div class="card-header" id="headingFour">
             <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                <button id="link"class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
                 La responsabilité civile
                 </button>
             </h2>
@@ -164,10 +168,10 @@
             </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card"style="background-color:whitesmoke">
         <div class="card-header" id="headingFive">
             <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+                <button id="link" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
                 La responsabilité pénale
                 </button>
             </h2>
@@ -181,7 +185,7 @@
     <div class="card">
         <div class="card-header" id="headingSix">
             <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
+                <button id="link" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
                 La responsabilité financière
                 </button>
             </h2>
@@ -207,7 +211,7 @@
     <!--fin de div accordeon-->
      </div>
      <!--fin de div col-md-12-->
-    </div>
+       </div>
    <!--fin de la row-->
 </div>
 

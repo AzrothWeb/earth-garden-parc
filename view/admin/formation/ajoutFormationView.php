@@ -17,4 +17,21 @@
         <input type="hidden" name="mode" value="ajout">
         <button class="btn btn-primary" type="submit">Ajouter</button>
     </form>
+    <script type="text/javascript" >
+	tinymce.init({
+		selector: '#contenu',
+		language: 'fr_FR',
+		plugins: [
+		"advlist autolink lists link image charmap print preview hr anchor pagebreak",
+		"searchreplace wordcount visualblocks visualchars code fullscreen",
+		"insertdatetime media nonbreaking save table contextmenu directionality",
+		"emoticons template paste textcolor colorpicker textpattern"
+		],
+		toolbar1: "undo redo | styleselect | bold italic forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link | preview",
+		images_upload_url: '<?php echo LOCAL_URL?>/assets/tinymce/upload_img.php',
+		images_upload_base_path: '<?php echo LOCAL_URL?>/assets/img/',
+		convert_urls: false,
+		images_upload_credentials: true
+	});
+</script>
 </div>

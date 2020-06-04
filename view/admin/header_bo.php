@@ -15,7 +15,7 @@ $session_id = session_id();
 
 
 <head>
-    <title>EARTH-Garden-Parc</title>
+    <title>Sidebar2</title>
     <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL; ?>/assets/css/bootstrap.min.css">
     <link media="all" type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -75,6 +75,12 @@ $session_id = session_id();
                 <a href="index?page=gestion-formation" class="nav-link text-dark font-italic">
                 <i class="far fa-clipboard mr-3 text-primary fa-fw"></i>
                     Gestion de formation
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="index?page=galerie" class="nav-link text-dark font-italic">
+                <i class="far fa-images mr-3 text-primary fa-fw"></i>
+                    Galerie
                 </a>
             </li>
         </ul>

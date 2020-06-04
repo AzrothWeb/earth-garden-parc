@@ -8,6 +8,7 @@
 /*TEST*/
 html,body {
     height:100%;
+    padding-top:70px;
 }
 /*de base header*/
 .listLink{
@@ -20,11 +21,16 @@ html,body {
 }
 /*Slogan du haut de page*/
 #earthWords{
-    width:700px;
     position: absolute;
-    top: 20px;
+    bottom:11em;
     right: 150px;
 }
+@media screen and (max-width: 1750px){
+        #earthWords{
+            width: 80%;
+            position: absolute;
+        }
+    }
 @media screen and (max-width: 1200px){
     #earthWords{
         width:500px;
@@ -207,6 +213,7 @@ section .section-title {
     color: #ffffff;
     background-color: #324149;
 }
+/*FIN DE L'ACCUEIL*/
 /*Footer*/
 footer{
     padding: 15px;
@@ -515,22 +522,47 @@ transition: 0.2s;
 .benetitre{
     font-size: 25px;
 }
-.bg-volontaire{
-    display: block;
+.align-items-baseline {
+    -ms-flex-align: baseline!important;
+    align-items: baseline!important;
+    display: flex;
     position: static;
 }
-.bg-volontaire::after{
+img.imgvolontaire {
+    display: block;
     position: absolute;
-    top: 100px;
-    left: 0;
-    bottom: 0;
-    right: 20px;
-    content: "";
-    z-index: -1;
-   background-image: url(../img/volontaire.png);
-    background-repeat: no-repeat;
-    background-size: contain; 
+    top: 8em;
+    left: 26em;
+    z-index: -197;
 }
+
 .collapse{
     z-index: 500;
+}
+/*Bouton*/
+#link{
+    color:green;
+}
+#link:hover{
+    text-decoration: none;
+    color: rgb(9, 42, 9);
+}
+
+/*Page Debuter*/
+.imgformation {
+    position: relative;
+    width: 33em;
+    height: 15em;
+    z-index: -1;
+    background-image: url(../img/article4.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*Fait tout les liens de la page enfaite*/
+.prixformation{
+    color:black;
+}
+.prixformation:hover{
+    text-decoration: none;
+    color: green;
 }
