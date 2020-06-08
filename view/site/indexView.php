@@ -1,4 +1,4 @@
-</div>
+    <div id="imagestop"><img class="imgstop" src="<?php echo LOCAL_URL;?>/assets/img/herbe.png" width="100%" height="100%"></div>
     <div id="carouselExampleIndicators" class="carousel slide my-carousel my-carousel" data-ride="carousel">
         <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -6,11 +6,11 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
     <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" style="background-image: url('https://i.imgur.com/NnzxG4S.jpg')">
+        <div class="carousel-item active" style="background-image: url('./assets/img/children.jpg')">
         </div>
-        <div class="carousel-item " style="background-image: url('https://i.imgur.com/w439mEw.jpg')">
+        <div class="carousel-item " style="background-image: url('./assets/img/permaculture.jpg')">
         </div>
-        <div class="carousel-item " style="background-image: url('https://i.imgur.com/cpIrOo1.jpg')">
+        <div class="carousel-item " style="background-image: url('./assets/img/herbe.png')">
         </div>
     </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -44,22 +44,24 @@
                                 <div class="frontside">
                                     <div class="card">
                                         <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="./assets/img/article-t.gif" alt="Zoo Terre Happy" title="Zoo" ></p>
+                                            <p><img class=" img-fluid" src="./assets/img/goat.jpg" alt="Zoo Terre Happy" title="Zoo" width="20px" height="auto"></p>
                                             <h4 class="card-title">Zoo-Terre Happy</h4>
                                             <a href="<?php echo LOCAL_URL;?>/#.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
                                         </div>
                                     </div>
                                 </div>
+                                <a id="cards" href="<?php echo LOCAL_URL;?>/index?page=zoo">
                                 <div class="backside">
                                     <div class="card">
                                         <div class="card-body text-center mt-4">
                                             <h4 class="card-title">Zoo-Terre Happy</h4>
                                             <p class="card-text">Ferme Pédagogique pouvant être visitée. Encadré par des professionels. </p>
+                                            <br>
                                             <ul class="list-inline">
                                                 <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="<?php echo LOCAL_URL;?>/#.php">
+                                                    <a class="social-icon text-xs-center" href="<?php echo LOCAL_URL;?>/index?page=zoo">
                                                         <button class="ensavoirplus">En savoir plus</button>
-                                                    </a>
+                                                    </a></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -76,22 +78,24 @@
                                 <div class="frontside">
                                     <div class="card">
                                         <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="./assets/img/gardenofmyearth.png" alt="Garden of my Earth" title="Jardin bio"></p>
+                                            <p><img class=" img-fluid" src="./assets/img/investment.jpg" alt="Garden of my Earth" title="Jardin bio"></p>
                                             <h4 class="card-title">Garden Of My Earth</h4>
                                             <a href="<?php echo LOCAL_URL;?>/#.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
                                         </div>
                                     </div>
                                 </div>
+                                <a id="cards" href="<?php echo LOCAL_URL;?>/index?page=garden">
                                 <div class="backside">
                                     <div class="card">
                                         <div class="card-body text-center mt-4">
                                             <h4 class="card-title">Garden Of My Earth</h4>
                                             <p class="card-text">Jardin de permaculture bio afin de préserver la biodiversité des sols.</p>
+                                           <br>
                                             <ul class="list-inline">
                                                 <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank" href="<?php echo LOCAL_URL;?>/#.php">
+                                                    <a class="social-icon text-xs-center"href="<?php echo LOCAL_URL;?>/index?page=garden">
                                                         <button class="ensavoirplus">En savoir plus</button>
-                                                    </a>
+                                                    </a></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -114,22 +118,24 @@
                             <div class="frontside">
                                 <div class="card">
                                     <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="./assets/img/playfulparkoffamily.png" alt="Playful Park of Family" title="Espace Familiale"></p>
+                                        <p><img class=" img-fluid" src="./assets/img/trees.jpg" alt="Playful Park of Family" title="Espace Familiale"></p>
                                         <h4 class="card-title">Playful Park Of Family</h4>
                                         <a href="<?php echo LOCAL_URL;?>/#.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
                                     </div>
                                 </div>
                             </div>
+                           <a id="cards" href="<?php echo LOCAL_URL;?>/index?page=playful">
                             <div class="backside">
                                 <div class="card">
                                     <div class="card-body text-center mt-4">
                                         <h4 class="card-title">Playful Park Of Family</h4>
                                         <p class="card-text">Espace d'accueil pour les activités en famille.</p>
+                                        <br>
                                         <ul class="list-inline">
                                             <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="<?php echo LOCAL_URL;?>/#.php">
+                                                <a class="social-icon text-xs-center" href="<?php echo LOCAL_URL;?>/index?page=playful">
                                                     <button class="ensavoirplus">En savoir plus</button>
-                                                </a>
+                                                </a></a>
                                             </li>
                                         </ul>
                                     </div>

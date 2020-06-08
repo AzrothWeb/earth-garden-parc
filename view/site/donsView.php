@@ -1,9 +1,10 @@
+</div>
 <div class="row">
     <div class="container">
         <h2 class="text-lg-center">Pourquoi faire un don à <strong class="egp">EARTH Garden parc</strong> ?</h2>
     </div>
 </div>
-    
+    <div class="container-md">
         <p class="text-justify">
             <br><br>
                 En soutenant notre association, vous agissez pour la transition écologique et le
@@ -40,9 +41,10 @@
             La réforme du prélèvement à la source ne modifie pas le régime de déduction fiscale de
             vos dons.
         </p>
-        <br><br>
+
+       </div> <br><br>
         <iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/earth-garden-parc/formulaires/1/widget" style="width:100%;height:750px;border:none;" onload="window.scroll(0, this.offsetTop)"></iframe>
-<!-- <div class="container">
+   <!-- <div class="container">
     <div class="row">
         <div class="col-md-12">
             <a href="https://www.helloasso.com/associations/earth-garden-parc/formulaires/1" target="_blank">
@@ -53,4 +55,4 @@
         </div>
     </div>
 </div> -->
-   <br><br>
+

@@ -4,7 +4,10 @@
     padding: 0px;
     font-family: "Bookman Old Style";
 }
-/*Header*/
+.a { text-decoration: none;
+    list-style-type: none; }
+/*Header bootstrap custom*/
+
 /*TEST*/
 html,body {
     height:100%;
@@ -18,56 +21,75 @@ html,body {
     padding-left: 15px;
     padding-right: 15px;
 }
-/*Slogan du haut de page*/
-#earthWords{
-    width:700px;
-    position: absolute;
-    top: 20px;
-    right: 150px;
-}
-@media screen and (max-width: 1200px){
-    #earthWords{
-        width:500px;
-        position: absolute;
-        top: 20px;
-        right: 150px;
-    }
-}
-/**Page d'Accueil**/    
+/**Page d'Accueil**/  
+
+
     .carousel-item {
-      height: 100vh;
+      height: 80vh;
       background: no-repeat center center scroll;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-      border-radius: 200px;
     }
-#citation{
-    font-weight: bold;
-    color: olive;
-    display: flex;
-    position: absolute;
-    top: 505px;
-    left:20px;
-}
-@media screen and (max-width: 992px){
-    #citation{
-        position: absolute;
-        top: 62em;;
-        
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
     }
-}
+    .imgstop{
+        height: 500px;
+    }
+    @media screen and (min-width: 1235px){
+        #imagestop {
+            display: none;
+        } 
+    }
+    @media screen and (max-width: 1235px){
+        .carousel-item {
+            height: 60vh;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+         
+          }
+          .carousel-inner {
+            display: none;
+          }
+    }
+    @media screen and (max-width: 400px){
+        .carousel-item {
+            height: 40vh;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+          
+          }
+    }
 
+    #citation {
+        font-weight: bold;
+        font-size: 25px;
+        color: white;
+        text-shadow: 0 0 10px black;
+        display: block;
+        position: relative;
+        /* top: -81px; */
+        bottom: 20em;
+        left: 3px;
+    }
 .bg-logo{
     position: relative;
-    width: 66em;
     height: auto;
 }
 .bg-logo::after{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 70px;
     bottom: 0;
     right: 0;
     content: "";
@@ -78,6 +100,10 @@ html,body {
     opacity: 0.55;
 }
 /*CARD de l'accueil*/
+#cards{
+    text-decoration: none;
+    list-style-type: none; 
+}
 .btn-primary:hover,
 .btn-primary:focus {
     background-color: #108d6f;
@@ -207,32 +233,33 @@ section .section-title {
     color: #ffffff;
     background-color: #324149;
 }
+/*FIN DE L'ACCUEIL*/
 /*Footer*/
-footer{
+/* footer{
     padding: 15px;
     background-color: #cbd957;
     padding-top: 25px;
-}
+} */
 /*Contact*/
-.offset-md-2.col-md-2.center {
+/* .offset-md-2.col-md-2.center {
     left: 479px;
     top: 100px;
 }
 .mobile{
     display:none;
-}
-@media screen and (max-width: 992px){
+} */
+/* @media screen and (max-width: 992px){
     /* logo de login de la nav qui disparait en dessous de 992px */
-    #icone_connexion img{
+    /* #icone_connexion img{
         display: none;
-    }
+    } */
     /* lien de connexion/login dans le ul de la nav qui apparait en dessous de 992px */
-    .mobile{
+    /* .mobile{
         display: block;
-    }
-}
+    } */
+/* } */
 /*footer reseaux sociaux*/
-.titre {
+/* .titre {
     margin-left: 250px;
     margin-top: 100px;
 }
@@ -252,10 +279,10 @@ footer{
 
 .social-f ul li a{
     color: transparent;
-}
+} */
 
 /*Insertion icon*/
-
+/* 
 .facebook-icon-f{
 background-image: url(../img/svg/facebook_noir.svg);
 }
@@ -273,10 +300,10 @@ background-image: url(../img/svg/instagram_noir.svg);
 .instagram-icon-f:hover{
 background-image: url(../img/svg/instagram_couleur.svg);
 transition: 0.2s;
-}
+} */
 /*footer icon de connexion*/
 
-
+/* 
 .connexionMobile{
     display: none;
 }
@@ -295,31 +322,33 @@ transition: 0.2s;
 }
 .navbar-nav{
     margin: auto;
-}
+} */
 /*Footer partenaire*/
-#partenaire{
+/* #partenaire{
     margin-top: 250px;
-}
+} */
 /*mention légale, copyright*/
-.mention {
+/* .mention {
     padding-top: 50px;
-}
+} */
 /**Format Mobile**/
 @media screen and (max-width: 1200px){
-    .text-right{
-        display: none;
-    }
-
     .connexionMobile{
         margin-top: 25px;
         display: block;
     }
 
     .bg-logo{
+        right:10px;
         background-image: none;
     }
 }
-
+@media screen and (max-width: 700px){
+    .bg-logo{
+        right:15px;
+        background-image: none;
+    }
+}
 /*Page les valeurs*/
 /*Haut de page principes*/
 .bg-principe {
@@ -478,7 +507,7 @@ transition: 0.2s;
     .h1 small {
     font-size: 24px;
     }
-/*Don page faire un don*/
+/****************************************Don page faire un don*********************************/
 .decor3{
         background-position: center;
         background-image: url(../img/decor1.png);
@@ -495,7 +524,7 @@ transition: 0.2s;
     height: 32em;
     width: 100%;
     right: 0px;
-    top: 27em;
+    top: 40em;
     z-index: -1;
 }
 
@@ -511,26 +540,61 @@ transition: 0.2s;
     background-repeat: no-repeat;
     background-size: contain;
 }
-/*Page bénévole*/
+.onepage-form.onepage-form-donation {
+    background-color: white;
+}
+/**********************************Page bénévole************************/
 .benetitre{
     font-size: 25px;
 }
-.bg-volontaire{
-    display: block;
+.align-items-baseline {
+    -ms-flex-align: baseline!important;
+    align-items: baseline!important;
+    display: flex;
     position: static;
 }
-.bg-volontaire::after{
+.imgvolontaire {
+    display: block;
     position: absolute;
-    top: 100px;
-    left: 0;
-    bottom: 0;
-    right: 20px;
-    content: "";
-    z-index: -1;
-   background-image: url(../img/volontaire.png);
-    background-repeat: no-repeat;
-    background-size: contain; 
+    width: 207px;
+    left: 0em;
+    z-index: -197;
 }
+/* .imgvolontaire2 {
+    display: block;
+    position: absolute;
+    width: 207px;
+    left: 104em;
+    z-index: -197;
+} */
+
 .collapse{
     z-index: 500;
+}
+/*Bouton*/
+#link{
+    color:green;
+}
+#link:hover{
+    text-decoration: none;
+    color: rgb(9, 42, 9);
+}
+
+/*Page Debuter*/
+.imgformation {
+    position: relative;
+    width: 33em;
+    height: 15em;
+    z-index: -1;
+    background-image: url(../img/article4.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/*Fait tout les liens de la page enfaite*/
+.prixformation{
+    color:black;
+}
+.prixformation:hover{
+    text-decoration: none;
+    color: green;
 }

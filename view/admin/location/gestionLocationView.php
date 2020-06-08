@@ -1,5 +1,5 @@
 <div class="container text-center">
-    <h1>Gestion des articles</h1>
+    <h1>Gestion des locations</h1>
     <table class="bg-light">
         <thead>
             <th>Titre</th>

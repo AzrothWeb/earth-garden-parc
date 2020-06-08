@@ -14,8 +14,9 @@
                 <input type="number" name="prix" id="prix" value="<?php echo $resultLocation->prix_article ?>">
             </div>
         </div>
+        <input type="hidden" name="id_article" value="<?php echo $resultLocation->id_article ?>">
         <input type="hidden" name="page" value="resultat-location">
-        <input type="hidden" name="mode" value="ajout">
+        <input type="hidden" name="mode" value="edition">
         <button class="btn btn-primary" type="submit">Ajouter</button>
             <?php } ?>
     </form>

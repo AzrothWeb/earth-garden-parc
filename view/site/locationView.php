@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-12 text-center">
         <div class="container">
-            <h1 class="text-center">Location</h1>
+            <h1 class="text-center">Espace professionnnel</h1>
             <br><br><br>
         </div>
     </div>
@@ -48,8 +48,11 @@
                 </div>
             </div>
         <!-- </div> -->
-    </div>
+       
+    </div> 
 </div>
+<br><br><br>
+<p class="text-center">Une de nos locations vous intéresse ? Pour réserver ou toutes autres informations, veuillez contacter <a href="index?page=contact">Le Régisseur</a></p>
 </div>
 <br><br><br>
 <?php

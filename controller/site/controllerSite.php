@@ -12,11 +12,15 @@
     }
     function afficherLocation(){
         require_once(realpath(__DIR__.'/../../model/modelPage.php'));
-        $resultat=recupLocations();
-        if ($resultat->total === 0){
-            require_once(realpath(__DIR__.'/../../view/site/0locationView.php'));
-        } else {
+        $resultatNb = recupnbLocations();
+        foreach ($resultatNb as $res){
+            $nbLocation = $res->total;
+        }
+        if ($nbLocation != 0){
+            $resultat=recupLocations();
             require_once(realpath(__DIR__.'/../../view/site/locationView.php'));
+        } else {
+            require_once(realpath(__DIR__.'/../../view/site/0locationView.php'));
         }
         require_once(realpath(__DIR__.'/../../view/site/footer.php'));
     }
@@ -28,7 +32,17 @@
         require_once(realpath(__DIR__.'/../../view/site/donsView.php'));
         require_once(realpath(__DIR__.'/../../view/site/footer.php'));
     }
-    function afficherActivites(){
+    function afficherFormations(){ //pour les formations
+        require_once(realpath(__DIR__.'/../../model/admin/modelArticle.php'));
+        $allFormations = recupAllFormations();
+        $resultat = recupCategory();
+        require_once(realpath(__DIR__.'/../../view/site/activitesView.php'));
+        require_once(realpath(__DIR__.'/../../view/site/footer.php'));
+    }
+    function afficherActivites(){ //pour les formations
+        require_once(realpath(__DIR__.'/../../model/modelPage.php'));
+        $resultat = recupCategory();
+        $resultatActivites = recupActivites();
         require_once(realpath(__DIR__.'/../../view/site/activitesView.php'));
         require_once(realpath(__DIR__.'/../../view/site/footer.php'));
     }
@@ -48,6 +62,26 @@
         } else{
         require_once(realpath(__DIR__.'/../../view/site/billeterieView.php'));
          }
+        require_once(realpath(__DIR__.'/../../view/site/footer.php'));
+    }
+    function afficherSidebar(){
+        require_once(realpath(__DIR__.'/../../model/modelArticle.php'));
+        require_once(realpath(__DIR__.'/../../view/site/sidebarView.php'));
+    }
+    function afficherZoo(){
+        require_once(realpath(__DIR__.'/../../view/site/zooView.php'));
+        require_once(realpath(__DIR__.'/../../view/site/footer.php'));
+    }
+    function afficherPlayful(){
+        require_once(realpath(__DIR__.'/../../view/site/playfulView.php'));
+        require_once(realpath(__DIR__.'/../../view/site/footer.php'));
+    }
+    function afficherGarden(){
+        require_once(realpath(__DIR__.'/../../view/site/gardenView.php'));
+        require_once(realpath(__DIR__.'/../../view/site/footer.php'));
+    }
+    function afficherFiltreCategory(){
+        require_once(realpath(__DIR__.'/../../view/site/resultatActivitesView.php'));
         require_once(realpath(__DIR__.'/../../view/site/footer.php'));
     }
 ?>

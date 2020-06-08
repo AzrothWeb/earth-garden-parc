@@ -1,4 +1,4 @@
-<?php require_once("header.php");?>
+<div class="container-lg">
 <br>
 <div class="bg-principe">
     <div class="row">
@@ -135,14 +135,14 @@
                         - Développer et animer des projets collectifs<br>                                                                  
                         - Réduire l’utilisation des produits phytosanitaires<br>                                                           
                         - Conseiller les agriculteurs<br>                                                                                              
-                        - Encourager l’agriculture biologique<br>                                                                                  
+                        - Soutenir l’agriculture biologique<br>                                                                                  
                         - Encourager l'apiculture
                             </p>
                         </div>
                         <div class="col-md-6">
                             <div class="text-justify">
                                <p>                                                                      
-                            - Engager et mobiliser les filières et les territoires<br>
+                            - Dynamiser les filières et les territoires en France<br>
                             - Diminuer les antibiotiques vétérinaires<br>
                             - Sélectionner des semences adaptées<br>
                             - Aider la transition<br>

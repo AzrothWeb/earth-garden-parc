@@ -59,7 +59,13 @@
     function recupLocations(){
         require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
         $connexion = new Connexion(NOM_BDD);
-        $sql = "SELECT COUNT(*) as total FROM article NATURAL JOIN media WHERE id_type= 2";
+        $sql = "SELECT * FROM article WHERE id_type= 2";
+        return $connexion->select($sql);
+    }
+    function recupnbLocations(){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "SELECT COUNT(*) as total FROM article WHERE id_type= 2";
         return $connexion->select($sql);
     }
     function recupBilleterie(){
@@ -71,7 +77,7 @@
     function recupActivites(){
         require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
         $connexion = new Connexion(NOM_BDD);
-        $sql = "SELECT * FROM article NATURAL JOIN media WHERE id_type= 1 AND id_type= 3" ;
+        $sql = "SELECT * FROM article NATURAL JOIN category WHERE id_type= 1";
         return $connexion->select($sql);
     }
     function recupDebuter(){
@@ -79,4 +85,21 @@
         $connexion = new Connexion(NOM_BDD);
         $sql = "SELECT * FROM article NATURAL JOIN media WHERE id_type= 3" ;
         return $connexion->select($sql);
+    }
+    function recupSidebar(){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "SELECT * FROM category";
+        return $connexion->select($sql);
+    }
+    function filtreCategory(){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "SELECT * FROM article WHERE id_category=" . $_GET['id_category'];
+        return $connexion->select($sql);
+    }
+    function recupCategory(){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        return $connexion->select("SELECT * FROM category");
     }
