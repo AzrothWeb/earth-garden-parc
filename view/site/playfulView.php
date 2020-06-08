@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/css/styleplayful.css">
 <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/js/garden.js">
 <!--Fermeture du container-lg-->
@@ -5,11 +6,21 @@
 <!-- <section class="slide-wrapper">
     <div class="div">
 	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+=======
+<link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/css/style1.css">
+<h2 class="text-center" style="color:#4F1B36;">Les activités en Famille</h2>
+<br><br>
+<section class="slide-wrapper">
+    <div class="div">
+	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+>>>>>>> 972ce363b87f5dafc2d6fdae86af699b36099a56
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
+<<<<<<< HEAD
 <h2 class="text-center" style="color:#4F1B36;">Les activités en Famille</h2>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -22,6 +33,65 @@
                 </div>
                 <div class="carousel-item ">
                     <div class="fill2">
+=======
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="fill">
+                        <div class="P">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 contre">
+			                <div class="offer offer-default">
+			                	<div class="shape">
+				            	<div class="shape-text">							
+				            	</div>
+				            </div>
+				            <div class="offer-content">
+                                <br>
+                                <h3 class="lead">Playful Park For Familly</h3>
+                                </p>
+				             </div>
+			                </div>
+                      </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="fill1">
+                        <div class="HL"> 
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 contre">
+			                <div class="offer offer-radius offer-primary">
+			                	<div class="shape">
+				            	<div class="shape-text">							
+				            	</div>
+				            </div>
+				            <div class="offer-content">
+                                <br>
+                                <h3 class="lead">Gîtes Happy</h3>
+                                </p>
+				             </div>
+			                </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="fill2">
+                        <div class="GH">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 contre">
+                                <div class="offer offer-success">
+                                    <div class="shape">
+                                        <div class="shape-text">							
+                                        </div>
+                                    </div>
+                                    <div class="offer-content">
+                                        <br>
+                                        <h3 class="lead">Happy Lunch</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+>>>>>>> 972ce363b87f5dafc2d6fdae86af699b36099a56
                     </div>
                 </div>
             </div>
@@ -29,7 +99,11 @@
     </div>
 </section>
 <br><br>
+<<<<<<< HEAD
 <!--TEXTE EXPLICATIF
+=======
+<!--TEXTE EXPLICATIF-->
+>>>>>>> 972ce363b87f5dafc2d6fdae86af699b36099a56
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
@@ -66,7 +140,11 @@
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+<<<<<<< HEAD
 			<div class="offer  offer-success">
+=======
+			<div class="offer offer-success">
+>>>>>>> 972ce363b87f5dafc2d6fdae86af699b36099a56
 				<div class="shape">
 					<div class="shape-text">							
 					</div>
@@ -82,6 +160,7 @@
 			</div>
 		</div>
 	</div>	
+<<<<<<< HEAD
 </div> -->
 <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/js/garden.js">
 </div>
@@ -137,3 +216,7 @@
     <p> A terme, il est prévu l’implantation d’un restaurant au sein du parc, qui se fournirait autant que possible auprès des maraichers du parc.</p>
   </section>
   
+=======
+</div>
+
+>>>>>>> 972ce363b87f5dafc2d6fdae86af699b36099a56

@@ -83,21 +83,46 @@
     background: #fff;
 }
 /*SIDEBAR*/
+<<<<<<< HEAD
 
 #button {
     display: flex;
     position: absolute;
     top: 48px;
+=======
+button.btn.btn-outline-success.my-2.my-sm-0 {
+    display: block;
+    position: inherit;
+    top: 23px;
+    right: -25px;
+>>>>>>> 972ce363b87f5dafc2d6fdae86af699b36099a56
 }
 img.insect {
     display: block;
     position: absolute;
+<<<<<<< HEAD
     top: 30em;
 }
 @media screen and (max-width: 1400px){
+=======
+    top: 12em;
+}
+@media screen and (max-width: 990px){
+>>>>>>> 972ce363b87f5dafc2d6fdae86af699b36099a56
     img.insect {
         display: none;
     }
 }
+<<<<<<< HEAD
 
+=======
+@media screen and (max-width: 990px){
+    button.btn.btn-outline-success.my-2.my-sm-0{
+        display: block;
+        position: relative;
+        top: 0px;
+        right:0px;
+    }
+}
+>>>>>>> 972ce363b87f5dafc2d6fdae86af699b36099a56
 
