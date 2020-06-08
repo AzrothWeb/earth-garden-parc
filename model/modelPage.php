@@ -59,7 +59,7 @@
     function recupLocations(){
         require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
         $connexion = new Connexion(NOM_BDD);
-        $sql = "SELECT * FROM article WHERE id_type= 2";
+        $sql = "SELECT * FROM article NATURAL JOIN media WHERE id_type= 2";
         return $connexion->select($sql);
     }
     function recupnbLocations(){
@@ -77,7 +77,7 @@
     function recupActivites(){
         require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
         $connexion = new Connexion(NOM_BDD);
-        $sql = "SELECT * FROM article NATURAL JOIN category WHERE id_type= 1";
+        $sql = "SELECT * FROM article NATURAL JOIN category NATURAL JOIN media WHERE id_type= 1";
         return $connexion->select($sql);
     }
     function recupDebuter(){

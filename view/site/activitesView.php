@@ -9,7 +9,6 @@
     <div class="col-md-10"></div>
     <div class="col-md-2">
     <?php require_once('sidebarView.php');?>
-    <img src="<?php echo LOCAL_URL;?>/assets/img/decor5.gif" alt="insect" title="insect" class="insect" width="80%">
     </div>
 </div>
 <div class="container-lg">
@@ -19,21 +18,22 @@
         ?>
     <div class="col-sm-6 col-md-4 mt-4">
         <div class="card">
-            <img class="card-img-top" src="https://picsum.photos/200/150/?random">
+            <img class="card-img-top" src="<?php echo $act->url_media;?>" alt="<?php echo $act->name_media ?>">
         <div class="card-block">
             <h4 class="card-title"><?php echo $act->titre_article;?></h4>
                 <div class="card-text">
-                      <?php echo $act->contenu_article;?>
+                      <?php echo substr($act->contenu_article, 0, 200);?>
                 </div>
         </div>
             <div class="card-footer">
                 <span class="float-left"><?php echo $act->name_category;?></span>
-                <button class="btn btn-secondary float-right btn-sm">En savoir plus</button>
+                <form action="index" method="get">
+                    <input type="hidden" name="id_article" value="<?php echo $act->id_article ?>">
+                </form>
             </div>
         </div>
     </div>
-    <?php }
-?>
+    <?php } ?>
 </div>
   
 <br><br>

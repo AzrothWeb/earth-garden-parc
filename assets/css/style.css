@@ -598,3 +598,9 @@ transition: 0.2s;
     text-decoration: none;
     color: green;
 }
+
+/*Page Location*/
+
+.img-center img{
+    margin: auto;
+}
