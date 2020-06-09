@@ -25,6 +25,7 @@ $session_id = session_id();
     <script type="text/javascript" src="<?php echo LOCAL_URL; ?>/assets/js/popper.min.js"></script>
     <script type="text/javascript" src="<?php echo LOCAL_URL; ?>/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo LOCAL_URL; ?>/assets/js/custombo.js"></script>
+    <script type="text/javascript" src="<?php echo LOCAL_URL; ?>/assets/js/associerImage.js"></script>
     <script type="text/javascript" src="<?php echo LOCAL_URL; ?>/assets/tinymce/tinymce.min.js"></script>
     <script src="https://kit.fontawesome.com/350d1dce07.js" crossorigin="anonymous"></script>
 

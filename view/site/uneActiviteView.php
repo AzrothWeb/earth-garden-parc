@@ -6,3 +6,5 @@
     <p><?php echo $resAct->contenu_article;?></p>
 
 </div>
+<br>
+<br>

@@ -9,6 +9,8 @@
 
     function afficherAjoutArticle(){
         require_once(realpath(__DIR__.'/../../model/admin/modelArticle.php'));
+        require_once(realpath(__DIR__.'/../../model/admin/modelGalerie.php'));
+        $resultatImage = recupAllMedia();
         $resultatCategory = recupCategory();
         require_once(realpath(__DIR__. '/../../view/admin/article/ajoutArticleView.php'));
     }
