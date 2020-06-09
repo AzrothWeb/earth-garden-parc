@@ -22,13 +22,15 @@
         <div class="card-block">
             <h4 class="card-title"><?php echo $act->titre_article;?></h4>
                 <div class="card-text">
-                      <?php echo substr($act->contenu_article, 0, 200);?>
+                      <p><?php echo substr($act->contenu_article, 0, 200);?></p>
                 </div>
         </div>
             <div class="card-footer">
                 <span class="float-left"><?php echo $act->name_category;?></span>
                 <form action="index" method="get">
                     <input type="hidden" name="id_article" value="<?php echo $act->id_article ?>">
+                    <input type="hidden" name="page" value="activite">
+                    <button class="btn btn-secondary float-right" type="submit">Voir Plus</button>
                 </form>
             </div>
         </div>

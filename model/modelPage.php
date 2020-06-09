@@ -80,6 +80,12 @@
         $sql = "SELECT * FROM article NATURAL JOIN category NATURAL JOIN media WHERE id_type= 1";
         return $connexion->select($sql);
     }
+    function recupUneActivite(){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "SELECT * FROM article NATURAL JOIN media WHERE id_article =" . $_GET['id_article'];
+        return $connexion->select($sql);
+    }
     function recupDebuter(){
         require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
         $connexion = new Connexion(NOM_BDD);

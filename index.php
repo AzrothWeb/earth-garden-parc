@@ -95,10 +95,6 @@
                 require_once('./controller/admin/controllerPage.php');
                 resultatPage($postParams);
                 break;
-            case "afficher-page":
-                require_once('./controller/site/controllerSite.php');
-                afficherPage($getParams);
-            break;
             case 'gestion-formation':
                 require_once('./controller/admin/controllerFormation.php');
                 afficherGestionFormation();
@@ -134,6 +130,10 @@
             case "activites":
                 require_once('./controller/site/controllerSite.php');
                 afficherActivites();
+            break;
+            case "activite":
+                require_once('./controller/site/controllerSite.php');
+                afficherUneActivite();
             break;
             case "benevole":
                 require_once('./controller/site/controllerSite.php');

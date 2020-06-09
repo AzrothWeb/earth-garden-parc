@@ -39,11 +39,17 @@
         require_once(realpath(__DIR__.'/../../view/site/activitesView.php'));
         require_once(realpath(__DIR__.'/../../view/site/footer.php'));
     }
-    function afficherActivites(){ //pour les formations
+    function afficherActivites(){
         require_once(realpath(__DIR__.'/../../model/modelPage.php'));
         $resultat = recupCategory();
         $resultatActivites = recupActivites();
         require_once(realpath(__DIR__.'/../../view/site/activitesView.php'));
+        require_once(realpath(__DIR__.'/../../view/site/footer.php'));
+    }
+    function afficherUneActivite(){ //pour afficher un page d'activité
+        require_once(realpath(__DIR__.'/../../model/modelPage.php'));
+        $resultatActivite = recupUneActivite();
+        require_once(realpath(__DIR__.'/../../view/site/uneActiviteView.php'));
         require_once(realpath(__DIR__.'/../../view/site/footer.php'));
     }
     function afficherDebuter(){
