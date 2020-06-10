@@ -7,7 +7,7 @@
                 <label for="titre">Titre de la Formation</label>
                 <input type="text" id="titre" name="titre" placeholder="Titre" value="<?php echo $resultFormation->titre_article ?>" required>
                 <label for="contenu">Contenu de la formation</label>
-                <textarea name="contenu" id="contenu" cols="30" rows="10"><?php echo $resultFormation->contenu_article ?></textarea>
+                <textarea name="contenu" id="contenu" cols="30" rows="22"><?php echo $resultFormation->contenu_article ?></textarea>
             </div>
             <div class="col-md-2">
                 <label for="prix">Prix en €</label>

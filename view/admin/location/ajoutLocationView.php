@@ -6,7 +6,7 @@
                 <label for="titre">Titre de la location</label>
                 <input type="text" id="titre" name="titre" placeholder="Titre" required>
                 <label for="contenu">Contenu de la location</label>
-                <textarea name="contenu" id="contenu" cols="30" rows="10"></textarea>
+                <textarea name="contenu" id="contenu" cols="30" rows="22"></textarea>
             </div>
             <div class="col-md-2">
                 <label for="prix">Prix en €</label>

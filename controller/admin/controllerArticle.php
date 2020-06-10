@@ -17,7 +17,9 @@
 
     function afficherEditionArticle(){
         require_once(realpath(__DIR__.'/../../model/admin/modelArticle.php'));
+        require_once(realpath(__DIR__.'/../../model/admin/modelGalerie.php'));
         $resultatCategory = recupCategory();
+        $resultatImage = recupAllMedia();
         $resultatArticle = recupUnArticle();
         require_once(realpath(__DIR__. '/../../view/admin/article/editArticleView.php'));
     }
@@ -38,7 +40,7 @@
             break;
             case 'edition':
                 $resultatEdition = editionArticle();
-                if ($resultatArticle === 0){
+                if ($resultatEdition === 0){
                     echo "<p>Une erreur est survenu lors de la modification de l'article</p>";
                     $resultatCategory = recupCategory();
                     $resultatArticle = recupUnArticle();

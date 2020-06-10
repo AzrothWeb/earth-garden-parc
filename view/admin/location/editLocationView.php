@@ -7,7 +7,7 @@
                 <label for="titre">Titre de la location</label>
                 <input type="text" id="titre" name="titre" placeholder="Titre" value="<?php echo $resultLocation->titre_article ?>" required>
                 <label for="contenu">Contenu de la location</label>
-                <textarea name="contenu" id="contenu" cols="30" rows="10"><?php echo $resultLocation->contenu_article ?></textarea>
+                <textarea name="contenu" id="contenu" cols="30" rows="22"><?php echo $resultLocation->contenu_article ?></textarea>
             </div>
             <div class="col-md-2">
                 <label for="prix">Prix en €</label>
