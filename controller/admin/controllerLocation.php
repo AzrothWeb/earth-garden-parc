@@ -8,11 +8,15 @@
     }
 
     function afficherAjoutLocation(){
+        require_once(realpath(__DIR__.'/../../model/admin/modelGalerie.php'));
+        $resultatImage = recupAllMedia();
         require_once(realpath(__DIR__. '/../../view/admin/location/ajoutLocationView.php'));
     }
 
     function afficherEditionLocation(){
         require_once(realpath(__DIR__.'/../../model/admin/modelLocation.php'));
+        require_once(realpath(__DIR__.'/../../model/admin/modelGalerie.php'));
+        $resultatImage = recupAllMedia();
         $resultatLocation = recupUneLocation();
         require_once(realpath(__DIR__. '/../../view/admin/location/editLocationView.php'));
 

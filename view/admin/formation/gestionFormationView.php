@@ -4,6 +4,7 @@
         <thead>
             <th>Titre</th>
             <th>Détail</th>
+            <th>Photo</th>
             <th>Prix</th>
             <th>Éditer</th>
             <th>Supprimer</th>
@@ -14,6 +15,7 @@
                 <tr>
                     <td><?php echo $result->titre_article ?></td>
                     <td><?php echo substr($result->contenu_article, 0, 50)  ?></td>
+                    <td><img src="<?php echo $result->url_media ?>" alt="<?php $result->name_media ?>" width="100px"></td>
                     <td><?php echo $result->prix_article ?></td>
                     <td>
                         <form action="index" method="get">
