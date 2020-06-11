@@ -18,7 +18,7 @@
         ?>
     <div class="col-sm-6 col-md-4 mt-4">
         <div class="card">
-            <img class="card-img-top" src="<?php echo $act->url_media;?>" alt="<?php echo $act->name_media ?>">
+            <img class="card-img-top" src="<?php echo $act->url_media;?>" alt="<?php echo $act->name_media ?>" width="200px" height="200px">
         <div class="card-block">
             <h4 class="card-title"><?php echo $act->titre_article;?></h4>
                 <div class="card-text">
