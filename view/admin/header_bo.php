@@ -39,7 +39,7 @@ $session_id = session_id();
     <div class="vertical-nav bg-white" id="sidebar">
         <div class="py-4 px-3 mb-4 bg-light">
             <div class="media d-flex align-items-center">
-                <a href="index">
+                <a href="index?page=accueil">
                     <img src="./assets/img/logo1.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
                 </a>
                 <div class="media-body">

@@ -87,6 +87,9 @@
         require_once(realpath(__DIR__.'/../../view/site/footer.php'));
     }
     function afficherFiltreCategory(){
+        require_once(realpath(__DIR__.'/../../model/modelPage.php'));
+        $resultat = recupCategory();
+        $resultatActivites = recupResultatFiltre();
         require_once(realpath(__DIR__.'/../../view/site/resultatActivitesView.php'));
         require_once(realpath(__DIR__.'/../../view/site/footer.php'));
     }

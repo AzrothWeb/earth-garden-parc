@@ -158,8 +158,7 @@
             case "filtre":
                 require_once('./controller/site/controllerSite.php');
                 afficherFiltreCategory();
-            case "resultatfiltre":
-                require_once('.controller/site/controllerSite.php');
+            break; 
             case "formations":
                 require_once('./controller/site/controllerSite.php');
                 afficherFormations();

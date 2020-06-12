@@ -86,6 +86,12 @@
         $sql = "SELECT * FROM article NATURAL JOIN media WHERE id_article =" . $_GET['id_article'];
         return $connexion->select($sql);
     }
+    function recupResultatFiltre(){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "SELECT * FROM article NATURAL JOIN media NATURAL JOIN category WHERE id_category = " . $_GET['id_category'];
+        return $connexion->select($sql);
+    }
     function recupDebuter(){
         require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
         $connexion = new Connexion(NOM_BDD);
