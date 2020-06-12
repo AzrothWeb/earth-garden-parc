@@ -20,7 +20,7 @@
             $resultat=recupLocations();
             require_once(realpath(__DIR__.'/../../view/site/locationView.php'));
         } else {
-            require_once(realpath(__DIR__.'/../../view/site/0locationView.php'));
+            require_once(realpath(__DIR__.'/../../view/site/locationTextView.php'));
         }
         require_once(realpath(__DIR__.'/../../view/site/footer.php'));
     }
@@ -61,13 +61,7 @@
         require_once(realpath(__DIR__.'/../../view/site/footer.php'));
     }
     function afficherBilleterie(){
-        require_once(realpath(__DIR__.'/../../model/modelPage.php'));
-        $res=recupBilleterie();
-        if($res === 0){
-        require_once(realpath(__DIR__.'/../../view/site/0billeterieView.php'));
-        } else{
         require_once(realpath(__DIR__.'/../../view/site/billeterieView.php'));
-         }
         require_once(realpath(__DIR__.'/../../view/site/footer.php'));
     }
     function afficherSidebar(){

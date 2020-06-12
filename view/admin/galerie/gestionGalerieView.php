@@ -16,7 +16,6 @@
                     <input type="hidden" name="mode" value="delete">
                     <button class="btn btn-danger btnSupp" type="submit"><i class='fas fa-trash-alt'></i></button>
                 </form>
-                <p class="text-center"><?php echo $res->id_media ?></p>
             </div>
         <?php } ?>
     </div>

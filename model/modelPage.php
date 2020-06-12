@@ -77,7 +77,7 @@
     function recupActivites(){
         require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
         $connexion = new Connexion(NOM_BDD);
-        $sql = "SELECT * FROM article NATURAL JOIN category NATURAL JOIN media WHERE id_type= 1";
+        $sql = "SELECT * FROM article NATURAL JOIN category NATURAL JOIN media WHERE id_type= 1 ORDER BY id_article DESC";
         return $connexion->select($sql);
     }
     function recupUneActivite(){

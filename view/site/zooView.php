@@ -1,16 +1,9 @@
-<<<<<<< HEAD
+
 <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/css/stylezoo.css">
 </div>
+<div class="image">
 <div id="firstPage" class="ha-bg-parallax main_banner " data-type="background" data-speed="10">
   <div class="ha-parallax-body">
-    <div id="carousel-example-generic" class="carousel slide vertical text-right" data-ride="carousel"> 
-          <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-          
           <!-- Wrapper for slides -->
     <div class="container-lg">
         <div class="container">
@@ -31,10 +24,4 @@
     </div>
   </div>
 </div>
-=======
-<div class="row">
-    <div class="container text-center">
-        <h1>Zoo-Terre Happy</h1>
-    </div>
 </div>
->>>>>>> 972ce363b87f5dafc2d6fdae86af699b36099a56

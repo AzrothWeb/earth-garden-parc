@@ -1,9 +1,10 @@
 </div>
 </main>
     <footer>
+    <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/css/stylefooter.css">
         <div>
             <div class="row">
-                <div class="col-lg-2 social-f text-center">
+                <div class="col-lg-2 social-f text-center" style="font-size: 22px;">
                     <p>Suivez-Nous</p>
                     <ul>
                         <li class="facebook-icon-f"><a href="http://www.fb.com/earthgardenparc" target="_blank">Facebook</a></li>
@@ -11,16 +12,16 @@
                     </ul>
                 </div>
                 <div class="col-lg-7"></div>
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-3 text-center" style="font-size:20px;">
                     <a href="index?page=contact">Contact</a>
                     <p>Horaire d'ouverture :<br>10h-17h</p>
                 </div>
             </div>
             <div class="text-center">
-                <a href="https://www.helloasso.com/"><img src="./assets/img/partenaire1.png" alt="image_partenaire" title="helloasso" width="20%" style="align-items: center;"></a>
-                <a href="https://www.onepercentfortheplanet.org/"> <img src="./assets/img/partenaire2.png" alt="image_partenaire" title="1%-for-the-planet" width="15%"></a>
-                <a href="#"> <img src="./assets/img/partenaire3.png" alt="image_partenaire" title="tristan-ferre" width="10%"></a>
-                <a href="https://entrepreneurs-animaliers.fr/"> <img src="./assets/img/partenaire4.gif" alt="image_partenaire" title="entrepreneurs-animaliers" width="15%"></a>
+                <a href="https://www.helloasso.com/"><img src="./assets/img/partenaire1.png" alt="image_partenaire" title="helloasso" width="10%" style="align-items: center;"></a>
+                <a href="https://www.onepercentfortheplanet.org/"> <img src="./assets/img/partenaire2.png" alt="image_partenaire" title="1%-for-the-planet" width="10%"></a>
+                <a href="#"> <img src="./assets/img/partenaire3.png" alt="image_partenaire" title="tristan-ferre" width="5%"></a>
+                <a href="https://entrepreneurs-animaliers.fr/"> <img src="./assets/img/partenaire4.gif" alt="image_partenaire" title="entrepreneurs-animaliers" width="10%"></a>
             </div>
             <div class="text-right">
                  <?php 

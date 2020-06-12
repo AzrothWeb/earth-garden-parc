@@ -18,7 +18,7 @@
         <p>L'ensemble des salles et du matériels de conférences seront disponible dès que le site sera prêt à accueillir du public. Les Sessions seront organiser par des formateurs extérieurs (Organismes de financement de la formation professionnelle). </p>
         </div>
         <div>
-            <a href="index?page=activites" class="prixformation">Prix : Loyer / 15% de commession sur le CA</a>
+            <a href="#" class="btn btn-success">Voir Les formations</a>
         </div>
     </div>
 </div>

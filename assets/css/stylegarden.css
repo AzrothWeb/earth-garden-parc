@@ -1,0 +1,65 @@
+
+/******************************************Images parallaxe*****************************************/
+p{
+    z-index: 20;
+}
+.hparallax {
+	background: url('./assets/img/rabbit.jpg')no-repeat fixed;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	height: 32em;
+    margin-left: 5px;
+	margin-right: 5px;
+
+}
+.parallax1 {
+	vertical-align: middle;
+    min-height: 430px;
+}
+.parallax2 {
+    vertical-align: middle;
+    min-height: 320px;
+
+}
+.block1{
+	display: inline;
+	position: relative;
+	left: 20px;
+	background-color: #90993b;
+	color: whitesmoke;
+	opacity: 0.9;
+    
+}
+.block2{
+	display: inline;
+	position: relative;
+	right: 20px;
+	background-color:#71310D;
+	opacity: 0.9;
+	color: whitesmoke;
+
+    
+}
+.section1{
+	border-radius: 0px 0px 20px 0px;
+}
+.section2{
+	border-radius: 0px 0px 20px 0px;
+}
+.image{
+	background: url(../img/garden2.jpg) no-repeat fixed;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	height: 64em;
+ 
+}

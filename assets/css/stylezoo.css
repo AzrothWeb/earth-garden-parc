@@ -1,6 +1,6 @@
 
 .ha-bg-parallax {
-	background: url(./img/Farm.jpg) 50% -0 no-repeat fixed;
+	background: url(./img/rabbit.jpg) no-repeat fixed;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-webkit-background-size: cover;
@@ -10,72 +10,36 @@
 	display: block;
 	position: relative;
 }
-.ha-parallax-body {
+
+ .ha-parallax-body {
 	vertical-align: middle;
-	background: rgba(0,0,0,0.45);
 	text-align: center;
+	background: url(./img/rabbit.jpg) no-repeat fixed;
 	color: #FFFFFF;
+	font-optical-sizing: black;
 	min-height: 650px;
 }
-.vertical .carousel-inner {
-	height: 100%;
+.container{
+	display: block;
+	position: relative;
+	/*top:8em;*/
 }
-.carousel.vertical .item {
-	-webkit-transition: 0.6s ease-in-out top;
-	-moz-transition: 0.6s ease-in-out top;
-	-ms-transition: 0.6s ease-in-out top;
-	-o-transition: 0.6s ease-in-out top;
-	transition: 0.6s ease-in-out top;
+
+.image{
+	background: url(../img/rabbit.jpg) no-repeat fixed;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	height: 40em;
 }
-.carousel.vertical .active {
-	top: 0;
-}
-.carousel.vertical .next {
-	top: 100%;
-}
-.carousel.vertical .prev {
-	top: -100%;
-}
-.carousel.vertical .next.left, .carousel.vertical .prev.right {
-	top: 0;
-}
-.carousel.vertical .active.left {
-	top: -100%;
-}
-.carousel.vertical .active.right {
-	top: 100%;
-}
-.carousel.vertical .item {
-	left: 0;
-}
-.carousel-indicators {
-	position: absolute;
-	bottom: 10px;
-	left: unset;
-	right: 2%;
-	z-index: 15;
-	width: 1%;
-	padding-left: 0;
-	margin-left: -30%;
-	text-align: right;
-	list-style: none;
-	top: 30%;
-}
-#carousel-example-generic {
-	top: 200px;
-}
-.carousel-indicators li {
-	float: none
-}
-#carousel-example-generic h3 {
-	font: normal 50px poppinsregular;
-	color: #FFFFFF;
-	margin: 0;
-	text-shadow: 0 0 10px #666;
-}
-#carousel-example-generic h1 {
-	font: normal 80px/61px poppinssemibold;
-	color: #FFFFFF;
-	margin: 0;
-	text-shadow: 0 0 10px #666;
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+	top: 190px;
+	color: whitesmoke;
 }

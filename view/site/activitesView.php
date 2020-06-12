@@ -22,7 +22,7 @@
                     <div class="card-block">
                         <h4 class="card-title"><?php echo $act->titre_article; ?></h4>
                         <div class="card-text">
-                            <p><?php echo substr($act->contenu_article, 0, 200); ?></p>
+                            <p><?php echo substr($act->contenu_article, 0, 200); ?>...</p>
                         </div>
                     </div>
                     <div class="card-footer">
