@@ -6,9 +6,11 @@
     <?php
         require_once('./config.php');
     ?>       
-        <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/css/bootstrap-custom.css">
         <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/css/bootstrap-custom.css">
         <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/css/styleheader.css">
+        <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
         <script type="text/javascript" src="<?php echo LOCAL_URL;?>/assets/js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="<?php echo LOCAL_URL;?>/assets/js/popper.min.js"></script>
         <script type="text/javascript" src="<?php echo LOCAL_URL;?>/assets/js/bootstrap.min.js"></script>
@@ -24,7 +26,6 @@
     ?>
     <body>
         <header>
-    <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/css/styleheader.css"> 
 <div class="navigation-wrap bg-light start-header start-style">
         <div class="row">
             <div class="col-12">  
@@ -34,7 +35,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-wrap:wrap">
                         <ul class="navbar-nav ml-auto py-4 py-md-0">
                             <li class="nav-item pl-3 pl-md-0 ml-0 ml-md-4 active">
                                 <a class="nav-link"  href="index?page=accueil" aria-haspopup="true" aria-expanded="false">Accueil</a>

@@ -83,18 +83,6 @@
                 require_once('./controller/admin/controllerLocation.php');
                 afficherResultatLocation();
             break;
-            case 'gestion-page' : 
-                require_once('./controller/admin/controllerPage.php');
-                gestionPage();
-                break;
-            case 'editer-page' : 
-                require_once('./controller/admin/controllerPage.php');
-                editionPage($getParams);
-                break;
-            case 'resultat-page' :
-                require_once('./controller/admin/controllerPage.php');
-                resultatPage($postParams);
-                break;
             case 'gestion-formation':
                 require_once('./controller/admin/controllerFormation.php');
                 afficherGestionFormation();
@@ -110,6 +98,10 @@
             case 'resultat-formation':
                 require_once('./controller/admin/controllerFormation.php');
                 afficherResultatFormation();
+            break;
+            case 'gestion-category':
+                require_once('./controller/admin/controllerCategory.php');
+                afficherGestionCategory();
             break;
             case "contact":
                 require_once('./controller/site/controllerSite.php');

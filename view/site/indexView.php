@@ -10,7 +10,7 @@
         </div>
         <div class="carousel-item " style="background-image: url('./assets/img/permaculture.jpg')">
         </div>
-        <div class="carousel-item " style="background-image: url('./assets/img/herbe.png')">
+        <div class="carousel-item " style="background-image: url('./assets/img/herbe.jpg')">
         </div>
     </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

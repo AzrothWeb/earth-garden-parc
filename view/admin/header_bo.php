@@ -21,6 +21,7 @@ $session_id = session_id();
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL; ?>/assets/css/bootstrap-custom.css">
     <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL; ?>/assets/css/style_bo.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="<?php echo LOCAL_URL; ?>/assets/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="<?php echo LOCAL_URL; ?>/assets/js/popper.min.js"></script>
     <script type="text/javascript" src="<?php echo LOCAL_URL; ?>/assets/js/bootstrap.min.js"></script>
@@ -76,6 +77,12 @@ $session_id = session_id();
                 <a href="index?page=gestion-formation" class="nav-link text-dark font-italic">
                 <i class="far fa-clipboard mr-3 text-primary fa-fw"></i>
                     Gestion de formation
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="index?page=gestion-category" class="nav-link text-dark font-italic">
+                <i class="far fa-clipboard mr-3 text-primary fa-fw"></i>
+                    Gestion de catégorie
                 </a>
             </li>
             <li class="nav-item">

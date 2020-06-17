@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/css/styleaccueil.css">
+<link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 
 <div class="slideshow">
   <div class="slide current" style="background-image:url(//az619519.vo.msecnd.net/files/CanadianSnails_EN-US13407952508_1366x768.jpg);">
