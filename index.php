@@ -103,6 +103,10 @@
                 require_once('./controller/admin/controllerCategory.php');
                 afficherGestionCategory();
             break;
+            case 'resultat-category':
+                require_once('./controller/admin/controllerCategory.php');
+                afficherResultatCategory();
+            break;
             case "contact":
                 require_once('./controller/site/controllerSite.php');
                 afficherContact();
