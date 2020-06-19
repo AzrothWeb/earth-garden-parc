@@ -3,7 +3,7 @@
 
     <?php
     if(isset($_POST['contenu'])){
-        $entete = "Mail de " . $_POST['fistname'] . ' ' . $_POST['name'] . "pouvant être répondu a l'adresse mail : " . $_POST['email'];
+        $entete = "Mail de " . $_POST['firstname'] . ' ' . $_POST['name'] . "pouvant être répondu a l'adresse mail : " . $_POST['email'];
         $message = $_POST['contenu'];
         $resultatMail = mail('regisseur@earth-garden-parc.org',$_POST['sujet'],$message);
         if ($resultatMail === 0){
@@ -27,7 +27,7 @@
                 <input class="form-control" type="text" name="sujet" id="object">
                 <label for="contenu">*Message</label>
                 <textarea class="form-control" id="contenu" name="contenu" placeholder="Message" style="height:150px;" required></textarea>
-                <span id="annotation">Les champs avec des * doivent obligatoirement être remplis afin d'envoyer le mails</span>
+                <span id="annotation">Les champs avec des * doivent obligatoirement être remplis afin d'envoyer le mail</span>
                 <input type="hidden" name="test">
                 <input class="btn btn-primary" id="btnEnvoyerMail" type="submit" value="Envoyer"><br><br>
             </form>
