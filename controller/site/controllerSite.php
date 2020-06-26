@@ -32,11 +32,9 @@
         require_once(realpath(__DIR__.'/../../view/site/donsView.php'));
         require_once(realpath(__DIR__.'/../../view/site/footer.php'));
     }
-    function afficherFormations(){ //pour les formations
+    function afficherFormations(){
         require_once(realpath(__DIR__.'/../../model/admin/modelArticle.php'));
         $allFormations = recupAllFormations();
-        $resultat = recupCategory();
-        require_once(realpath(__DIR__.'/../../view/site/activitesView.php'));
         require_once(realpath(__DIR__.'/../../view/site/footer.php'));
     }
     function afficherActivites(){

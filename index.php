@@ -1,169 +1,172 @@
 <?php
-    $getParams = isset($_GET) ? $_GET : null;
-    $postParams = isset($_POST) ? $_POST : null;
-    $params = [
-        "get"  => $getParams,
-        "post" => $postParams
-    ];
-    if (isset($_GET['page'])){
-        switch ($_GET['page']) {
-            case 'accueil':
-                require_once('./controller/site/controllerSite.php');
-                afficherAccueil();
+
+
+$getParams = isset($_GET) ? $_GET : null;
+$postParams = isset($_POST) ? $_POST : null;
+$params = [
+    "get"  => $getParams,
+    "post" => $postParams
+];
+if (isset($_GET['page'])) {
+    switch ($_GET['page']) {
+        case 'accueil':
+            require_once('./controller/site/controllerSite.php');
+            afficherAccueil();
             break;
-            case 'login':
-                require_once('./controller/site/controllerUtilisateur.php');
-                login();
-                break;
-            case 'valeurs':
-                require_once('./controller/site/controllerSite.php');
-                afficherNosValeurs();
+        case 'login':
+            require_once('./controller/site/controllerUtilisateur.php');
+            login();
             break;
-            case 'location' :
-                require_once('./controller/site/controllerSite.php');
-                afficherLocation();
+        case 'valeurs':
+            require_once('./controller/site/controllerSite.php');
+            afficherNosValeurs();
             break;
-            case 'espace-client' :
-                require_once('./controller/site/controllerUtilisateur.php');
-                afficherEspaceClient();
-                break;
-            case 'resultat-utilisateur' :
-                require_once('./controller/site/controllerUtilisateur.php');
-                resultatUtilisateur($postParams);
-                break;
-           case 'gestion-site':
-                require_once('./controller/admin/controllerAdmin.php');
-                afficherTableauDeBord();
+        case 'location':
+            require_once('./controller/site/controllerSite.php');
+            afficherLocation();
             break;
-            case 'gestion-user':
-                require_once('./controller/admin/controllerUser.php');
-                afficherGestionUser();
+        case 'espace-client':
+            require_once('./controller/site/controllerUtilisateur.php');
+            afficherEspaceClient();
             break;
-            case 'ajout-user':
-                require_once('./controller/admin/controllerUser.php');
-                afficherAjoutUser();
+        case 'resultat-utilisateur':
+            require_once('./controller/site/controllerUtilisateur.php');
+            resultatUtilisateur($postParams);
             break;
-            case 'edit-user':
-                require_once('./controller/admin/controllerUser.php');
-                afficherEditUser();
+        case 'gestion-site':
+            require_once('./controller/admin/controllerAdmin.php');
+            afficherTableauDeBord();
             break;
-            case 'resultat-user':
-                require_once('./controller/admin/controllerUser.php');
-                afficherResultatUser();
+        case 'gestion-user':
+            require_once('./controller/admin/controllerUser.php');
+            afficherGestionUser();
             break;
-              case 'gestion-article': 
-                require_once('./controller/admin/controllerArticle.php');
-                afficherGestionArticle();
+        case 'ajout-user':
+            require_once('./controller/admin/controllerUser.php');
+            afficherAjoutUser();
             break;
-            case 'ajout-article':
-                require_once('./controller/admin/controllerArticle.php');
-                afficherAjoutArticle();
+        case 'edit-user':
+            require_once('./controller/admin/controllerUser.php');
+            afficherEditUser();
             break;
-            case 'edition-article':
-                require_once('./controller/admin/controllerArticle.php');
-                afficherEditionArticle();
+        case 'resultat-user':
+            require_once('./controller/admin/controllerUser.php');
+            afficherResultatUser();
             break;
-            case 'resultat-article':
-                require_once('./controller/admin/controllerArticle.php');
-                afficherResultatArticle();
+        case 'gestion-article':
+            require_once('./controller/admin/controllerArticle.php');
+            afficherGestionArticle();
             break;
-            case 'gestion-location':
-                require_once('./controller/admin/controllerLocation.php');
-                afficherGestionLocation();
+        case 'ajout-article':
+            require_once('./controller/admin/controllerArticle.php');
+            afficherAjoutArticle();
             break;
-            case 'ajout-location':
-                require_once('./controller/admin/controllerLocation.php');
-                afficherAjoutLocation();
+        case 'edition-article':
+            require_once('./controller/admin/controllerArticle.php');
+            afficherEditionArticle();
             break;
-            case 'edition-location':
-                require_once('./controller/admin/controllerLocation.php');
-                afficherEditionLocation();
+        case 'resultat-article':
+            require_once('./controller/admin/controllerArticle.php');
+            afficherResultatArticle();
             break;
-            case 'resultat-location':
-                require_once('./controller/admin/controllerLocation.php');
-                afficherResultatLocation();
+        case 'gestion-location':
+            require_once('./controller/admin/controllerLocation.php');
+            afficherGestionLocation();
             break;
-            case 'gestion-formation':
-                require_once('./controller/admin/controllerFormation.php');
-                afficherGestionFormation();
+        case 'ajout-location':
+            require_once('./controller/admin/controllerLocation.php');
+            afficherAjoutLocation();
             break;
-            case 'ajout-formation':
-                require_once('./controller/admin/controllerFormation.php');
-                afficherAjoutFormation();
+        case 'edition-location':
+            require_once('./controller/admin/controllerLocation.php');
+            afficherEditionLocation();
             break;
-            case 'edition-formation':
-                require_once('./controller/admin/controllerFormation.php');
-                afficherEditionFormation();
+        case 'resultat-location':
+            require_once('./controller/admin/controllerLocation.php');
+            afficherResultatLocation();
             break;
-            case 'resultat-formation':
-                require_once('./controller/admin/controllerFormation.php');
-                afficherResultatFormation();
+        case 'gestion-formation':
+            require_once('./controller/admin/controllerFormation.php');
+            afficherGestionFormation();
             break;
-            case 'gestion-category':
-                require_once('./controller/admin/controllerCategory.php');
-                afficherGestionCategory();
+        case 'ajout-formation':
+            require_once('./controller/admin/controllerFormation.php');
+            afficherAjoutFormation();
             break;
-            case 'resultat-category':
-                require_once('./controller/admin/controllerCategory.php');
-                afficherResultatCategory();
+        case 'edition-formation':
+            require_once('./controller/admin/controllerFormation.php');
+            afficherEditionFormation();
             break;
-            case "contact":
-                require_once('./controller/site/controllerSite.php');
-                afficherContact();
+        case 'resultat-formation':
+            require_once('./controller/admin/controllerFormation.php');
+            afficherResultatFormation();
             break;
-            case "debuter":
-                require_once('./controller/site/controllerSite.php');
-                afficherDebuter();
+        case 'gestion-category':
+            require_once('./controller/admin/controllerCategory.php');
+            afficherGestionCategory();
             break;
-            case "dons":
-                require_once('./controller/site/controllerSite.php');
-                afficherDons();
+        case 'resultat-category':
+            require_once('./controller/admin/controllerCategory.php');
+            afficherResultatCategory();
             break;
-            case "billeterie":
-                require_once('./controller/site/controllerSite.php');
-                afficherBilleterie();
+        case "contact":
+            require_once('./controller/site/controllerSite.php');
+            afficherContact();
             break;
-            case "activites":
-                require_once('./controller/site/controllerSite.php');
-                afficherActivites();
+        case "debuter":
+            require_once('./controller/site/controllerSite.php');
+            afficherDebuter();
             break;
-            case "activite":
-                require_once('./controller/site/controllerSite.php');
-                afficherUneActivite();
+        case "dons":
+            require_once('./controller/site/controllerSite.php');
+            afficherDons();
             break;
-            case "benevole":
-                require_once('./controller/site/controllerSite.php');
-                afficherBenevole();
+        case "billeterie":
+            require_once('./controller/site/controllerSite.php');
+            afficherBilleterie();
             break;
-            case "sidebar":
-                require_once('./controller/site/controllerSite.php');
-                afficherSidebar();
+        case "activites":
+            require_once('./controller/site/controllerSite.php');
+            afficherActivites();
             break;
-            case "zoo":
-                require_once('./controller/site/controllerSite.php');
-                afficherZoo();
+        case "activite":
+            require_once('./controller/site/controllerSite.php');
+            afficherUneActivite();
             break;
-            case "playful":
-                require_once('./controller/site/controllerSite.php');
-                afficherPlayful();
+        case "benevole":
+            require_once('./controller/site/controllerSite.php');
+            afficherBenevole();
             break;
-            case "garden":
-                require_once('./controller/site/controllerSite.php');
-                afficherGarden();
+        case "sidebar":
+            require_once('./controller/site/controllerSite.php');
+            afficherSidebar();
             break;
-            case "filtre":
-                require_once('./controller/site/controllerSite.php');
-                afficherFiltreCategory();
-            break; 
-            case "formations":
-                require_once('./controller/site/controllerSite.php');
-                afficherFormations();
-            break;  
-            case 'galerie': require_once('./controller/admin/controllerGalerie.php');
-                afficherGalerie();
+        case "zoo":
+            require_once('./controller/site/controllerSite.php');
+            afficherZoo();
             break;
-        }
-    } else {
-        require_once('./controller/site/controllerAccueil.php');
-        afficherAccueil1();
+        case "playful":
+            require_once('./controller/site/controllerSite.php');
+            afficherPlayful();
+            break;
+        case "garden":
+            require_once('./controller/site/controllerSite.php');
+            afficherGarden();
+            break;
+        case "filtre":
+            require_once('./controller/site/controllerSite.php');
+            afficherFiltreCategory();
+            break;
+        case "formations":
+            require_once('./controller/site/controllerSite.php');
+            afficherFormations();
+            break;
+        case 'galerie':
+            require_once('./controller/admin/controllerGalerie.php');
+            afficherGalerie();
+            break;
     }
+} else {
+    require_once('./controller/site/controllerAccueil.php');
+    afficherAccueil1();
+}
