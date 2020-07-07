@@ -117,6 +117,10 @@ if (isset($_GET['page'])) {
             require_once('./controller/site/controllerSite.php');
             afficherDebuter();
             break;
+        case "formations":
+            require_once('./controller/site/controllerSite.php');
+            afficherFormations();
+            break;
         case "dons":
             require_once('./controller/site/controllerSite.php');
             afficherDons();

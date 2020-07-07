@@ -80,6 +80,18 @@
         $sql = "SELECT * FROM article NATURAL JOIN category NATURAL JOIN media WHERE id_type= 1 ORDER BY id_article DESC";
         return $connexion->select($sql);
     }
+    function recupNbFormations(){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "SELECT Count(*) as total FROM article WHERE id_type= 3";
+        return $connexion->select($sql);
+    }
+    function recupAllFormations(){
+        require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
+        $connexion = new Connexion(NOM_BDD);
+        $sql = "SELECT * FROM article NATURAL JOIN category NATURAL JOIN media WHERE id_type= 3 ORDER BY id_article DESC";
+        return $connexion->select($sql);
+    }
     function recupUneActivite(){
         require_once(realpath(dirname(__FILE__) . "/../class/connexion.php")); 
         $connexion = new Connexion(NOM_BDD);

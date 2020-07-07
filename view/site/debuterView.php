@@ -10,6 +10,7 @@
 <div class="row">
     <div class="col-md-6">
         <div class="imgformation">
+            <img src="<?php echo LOCAL_URL ?>/assets/img/article4.gif" alt="Journée de formation" width="80%" height="auto">
         </div>
     </div>
     <div class="col-md-6">
@@ -18,7 +19,7 @@
         <p>L'ensemble des salles et du matériels de conférences seront disponible dès que le site sera prêt à accueillir du public. Les Sessions seront organiser par des formateurs extérieurs (Organismes de financement de la formation professionnelle). </p>
         </div>
         <div>
-            <a href="#" class="btn btn-success">Voir Les formations</a>
+            <a href="index?page=formations" class="btn btn-success">Voir Les formations</a>
         </div>
     </div>
 </div>

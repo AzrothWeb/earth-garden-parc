@@ -1,0 +1,22 @@
+.boxFormation{
+    width: 1036px;
+    margin : 15px;
+    padding: 10px;
+    border: 1px solid rgba(238, 238, 238, 0.527);
+    border-radius: 10px;
+}
+
+.boxFormation:hover{
+    width : 1080px;
+    background-color: rgba(238, 238, 238, 0.527);
+    transition-duration: 500ms;
+}
+
+.titreFormation{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bleu{
+    color : blue;
+}

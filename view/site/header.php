@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/css/styleheader.css">
         <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
         <script type="text/javascript" src="<?php echo LOCAL_URL;?>/assets/js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="<?php echo LOCAL_URL;?>/assets/js/jquery-ui.min.js"></script>
         <script type="text/javascript" src="<?php echo LOCAL_URL;?>/assets/js/popper.min.js"></script>
         <script type="text/javascript" src="<?php echo LOCAL_URL;?>/assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="<?php echo LOCAL_URL;?>/assets/js/anime.js"></script>
