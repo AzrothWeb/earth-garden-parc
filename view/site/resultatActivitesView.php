@@ -1,7 +1,7 @@
-<!--nouveau css pour pas foutre mes cards d'accueil en l'air-->
 <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL; ?>/assets/css/styleact.css">
+<!--page de traitement des filtres catégories-->
 <div class="text-center">
-    <h1>Résultat Filtre</h1>
+    <h1>Résultat de la sélection</h1>
 </div>
 <br><br>
 <div class="row">

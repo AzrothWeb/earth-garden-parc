@@ -1,4 +1,4 @@
-
+/*Effet parallax*/
 .ha-bg-parallax {
 	background: url(./img/rabbit.jpg) no-repeat fixed;
 	-moz-background-size: cover;
@@ -42,4 +42,55 @@
     overflow: hidden;
 	top: 190px;
 	color: whitesmoke;
+}
+.item.active{
+    display: block;
+    position: absolute;
+    z-index: 10000;
+    margin-top: -28em;
+overflow: hidden;
+text-shadow: black;
+color: whitesmoke;
+}
+/*Réglages de format*/
+@media screen and (max-width: 1027px){
+.item.active{
+margin-top: -38em;}
+
+}
+@media screen and (max-width: 840px){
+    h1{ 
+		font-size: 25px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	.item.active {
+		display: block;
+		position: absolute;
+		color: whitesmoke;
+		z-index: 10000;
+		margin-top: -31em;
+		overflow: hidden;
+		text-shadow: black;
+	}
+    
+}
+@media screen and (max-width: 360px){
+    h1{ 
+		font-size: 25px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	.item.active {
+		display: block;
+		position: absolute;
+		color: whitesmoke;
+		z-index: 10000;
+		margin-top: -36em;
+		overflow: hidden;
+		text-shadow: black;
+	}
+    
 }

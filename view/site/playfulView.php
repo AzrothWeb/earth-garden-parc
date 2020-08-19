@@ -33,14 +33,14 @@
   </section>
   <div class="pimg3">
     <div class="ptext">
-      <h1 class="trans">
+      <h1 id="nosprod" class="trans">
         Nos produits dans votre assiette</h1>
     </div>
   </div>
   <section class="section section-dark">
     <h2>Happy Lunch</h2>
     <br>
-    <p> A terme, il est prévu l’implantation d’un restaurant au sein du parc, qui se fournirait autant que possible auprès des maraichers du parc.</p>
+    <p> A terme, il est prévu l’implantation d’un restaurant au sein du parc, qui se fournira autant que possible auprès des maraîchers du parc.</p>
   </section>
 </div>
 

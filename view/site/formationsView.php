@@ -4,7 +4,7 @@
     <h1 class="text-center">Nos Formations</h1>
     <?php foreach ($allFormations as $resultFormation) { ?>
         <div class="row boxFormation" id="formation<?php echo $resultFormation->id_article ?>">
-            <img class="col-md-4" src="<?php echo $resultFormation->url_media ?>" alt="<?php echo $resultFormation->name_media ?>">
+            <img class="col-md-4" src="<?php echo $resultFormation->url_media ?>" alt="<?php echo $resultFormation->name_media ?>"  width="50%">
             <div class="col-md-8 text-center">
                 <span class="titreFormation text-center"><?php echo $resultFormation->titre_article ?></span>
                 <br>
@@ -14,7 +14,7 @@
             <br>
         </div>
         <div class="modal fade" id="modal-formation<?php echo $resultFormation->id_article ?>">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"><?php echo $resultFormation->titre_article ?></h5>

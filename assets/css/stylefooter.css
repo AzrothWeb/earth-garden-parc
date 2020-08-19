@@ -100,16 +100,5 @@ transition: 0.2s;
         margin-top: 25px;
         display: block;
     }
-
-    .bg-logo{
-        right:10px;
-        background-image: none;
-    }
-}
-@media screen and (max-width: 700px){
-    .bg-logo{
-        right:15px;
-        background-image: none;
-    }
 }
 /***********************************************************test footer******************/

@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL; ?>/assets/css/styleact.css">
+<!--Sidebar présente dans la page activiteView-->
 <span>Catégories</span>
 <br><br>
 <div class="btn-group" role="group" aria-label="First group">
@@ -12,6 +13,7 @@
             <?php } ?>
         </select>
         <div class="bouton">
+        	<!--Rammene sur la page de resultatActivitesView-->
             <button id="btnCat" name="page" class="btn btn-outline-success my-2 my-sm-0" type="submit" value="filtre"><i class="fas fa-search"></i></button>
         </div>
     </form>

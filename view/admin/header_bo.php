@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-
-
+<link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 
 <?php
 require_once(realpath(__DIR__ . '/../../config.php'));
@@ -15,13 +14,12 @@ $session_id = session_id();
 
 
 <head>
-    <title>Sidebar2</title>
+    <title>EARTH-Garden-Parc</title>
     <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL; ?>/assets/css/bootstrap.min.css">
     <link media="all" type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL; ?>/assets/css/bootstrap-custom.css">
     <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL; ?>/assets/css/style_bo.css">
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="<?php echo LOCAL_URL; ?>/assets/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="<?php echo LOCAL_URL; ?>/assets/js/popper.min.js"></script>
     <script type="text/javascript" src="<?php echo LOCAL_URL; ?>/assets/js/bootstrap.min.js"></script>

@@ -1,0 +1,72 @@
+/**********************************Page bénévole************************/
+.benetitre{
+    font-size: 25px;
+}
+.align-items-baseline {
+    -ms-flex-align: baseline!important;
+    align-items: baseline!important;
+    display: flex;
+    position: static;
+}
+.imgvolontaire {
+    display: block;
+    position: absolute;
+    width: 20em;
+    left: 0em;
+    z-index: -197;
+}
+
+.collapse{
+    z-index: 500;
+}
+.imgvolontaire {
+    display: block;
+    position: absolute;
+    width: 20em;
+    left: 0em;
+    z-index: -197;
+}
+@media screen and (max-width: 1400px){
+    .imgvolontaire {
+        display: block;
+        position: absolute;
+        width: 20em;
+        left: 0em;
+        z-index: -197;
+        opacity: 0.3;
+    } 
+    
+}
+/*Bouton*/
+#link{
+    color:green;
+}
+#link:hover{
+    text-decoration: none;
+    color: rgb(9, 42, 9);
+}
+
+.accordion0 {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  
+  .accordion0:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  

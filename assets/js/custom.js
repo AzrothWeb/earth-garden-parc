@@ -11,7 +11,7 @@ $(document).ready(function(){
     rotateZ: [180, 0],
     duration: 750,
     easing: "easeOutExpo",
-    delay: (el, i) =>5000 * i
+    delay: (el, i) =>3000 * i
   }).add({
     targets: '.defilewrap',
     opacity: 0,
@@ -66,7 +66,6 @@ $(document).ready(function(){
   var backgrounds = new Array(
       'url(./assets/img/rabbit.jpg)'
       , 'url(./assets/img/herisson.jpg)'
-     , 'url(./assets/img/mouton.jpg)'
     , 'url(./assets/img/poultry.jpg)'
     , 'url(./assets/img/donkey.jpg)'
      , 'url(./assets/img/goat2.jpg)'

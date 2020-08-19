@@ -1,0 +1,19 @@
+h2{
+    color : #4F1B36;
+}
+.soustitre{
+    color : #58300fd8;
+    font-weight: bold;
+    font-size: 27px;
+}
+.plant{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    opacity: 0.14;
+    z-index: -1000;
+}
+.container{
+    display: block;
+    position: relative;
+}

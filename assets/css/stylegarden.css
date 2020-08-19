@@ -63,3 +63,57 @@ p{
 	height: 64em;
  
 }
+@media screen and (max-width: 976px){
+.block2{
+	margin-bottom: 5px;
+
+}   
+}
+@media screen and (max-width: 950px){
+	.block2{
+		margin-bottom: 15px;
+	
+	}}
+	@media screen and (max-width: 930px){
+		.block2{
+			margin-bottom: 25px;
+		
+		}}
+	@media screen and (max-width: 906px){
+		.block2{
+			margin-bottom: 20px;
+		
+		}	
+	}
+	@media screen and (max-width: 906px){
+		.block2{
+			margin-bottom: 25px;
+		
+		}	
+	}
+	@media screen and (max-width: 840px){
+		.section1 {
+			display: flex;
+			position: absolute;
+			border-radius: 0px 0px 20px 0px;
+		}
+		br{display:none}
+		.block1 {
+			display: inline;
+			position: relative;
+			left: 0px;
+			background-color: #90993b;
+			color: whitesmoke;
+			opacity: 0.9;
+		}
+		.block2{
+			display: inline;
+			position: relative;
+			right: 0px;
+			background-color:#71310D;
+			opacity: 0.9;
+			color: whitesmoke;}
+		br{display:none}
+			
+		}
+		}

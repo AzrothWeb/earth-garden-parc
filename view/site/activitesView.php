@@ -1,16 +1,20 @@
 <!--nouveau css pour pas foutre mes cards d'accueil en l'air-->
 <link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL; ?>/assets/css/styleact.css">
 <div class="text-center">
-    <h1>Nos Activités</h1>
+    <h1>Nos Actualités</h1>    
 </div>
-<br><br>
+<br>
+<div class="text-center">
+	<img src="<?php echo LOCAL_URL;?>./assets/img/bug1.png" width="150px" alt="Coccinelle" title="Coccinelle">
 </div>
 <div class="row">
     <div class="col-md-10"></div>
+<!--implantation de la Sidebar-->
     <div class="col-md-2">
         <?php require_once('sidebarView.php'); ?>
     </div>
 </div>
+<!--Cards des actualités/activités-->
 <div class="container-lg">
     <div class="row">
         <?php

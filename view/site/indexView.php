@@ -1,4 +1,8 @@
-    <div id="imagestop"><img class="imgstop" src="<?php echo LOCAL_URL;?>/assets/img/herbe.png" width="100%" height="100%"></div>
+<!--Image en format mobile-->
+    <div id="imagestop">
+    	<img class="imgstop" src='<?php echo LOCAL_URL;?>/assets/img/herbe.jpg' alt="jeunepousse" tilte="jeunepousse "width="100%" height="100%">
+    </div>
+    <!--Carousel-->
     <div id="carouselExampleIndicators" class="carousel slide my-carousel my-carousel" data-ride="carousel">
         <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -13,6 +17,7 @@
         <div class="carousel-item " style="background-image: url('./assets/img/herbe.jpg')">
         </div>
     </div>
+    <!--Bouton du carousel-->
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Précédent</span>
@@ -28,16 +33,18 @@
     il est le plus souvent préférable de regretter d’avoir accompli une action, quitte à en tirer une leçon,<br>
     plutôt que de regretter de ne pas l’avoir entreprise ».<br>« Le Bon sens »</p>
 </div>
-<!--CART PARTY FIESTA!-->
+<!--CART PARTY FIESTA! le réglages est sensible ne pas toucher au css-->
+<!--On remonte permet de mieux gérer l'espacement en fonction des formats-->
+<div class="onremonte"></div>
 <div class="container-lg">
     <br>
     <div class="bg-logo">
-        <h2 class="text-center">Nos Futures Activités</h2>
+        <h2 class="text-center">Nos Activités</h2>
         <br><br>
         <section id="team" class="pb-5"> 
             <div class="row"> 
                     <!-- Zoo-Terre Hapy card -->
-                    <div class="col-md-2"></div>
+                <div class="col-md-2"></div><!--Créer un espacement naturel-->
                     <div id="card "class="card1" class="d-flex flex-column bd-highlight md-3">
                         <div class="image-flip" >
                             <div class="mainflip flip-0">
@@ -55,11 +62,11 @@
                                     <div class="card">
                                         <div class="card-body text-center mt-4">
                                             <h4 class="card-title">Zoo-Terre Happy</h4>
-                                            <p class="card-text">Ferme Pédagogique pouvant être visitée. Encadré par des professionels. </p>
+                                            <p class="card-text">Ferme Pédagogique pouvant être visitée. Encadrée par des professionels. </p>
                                             <br>
                                             <ul class="list-inline">
                                                 <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" href="<?php echo LOCAL_URL;?>/index?page=zoo">
+                                                    <a class="social-icon text-xs-center">
                                                         <button class="ensavoirplus">En savoir plus</button>
                                                     </a></a>
                                                 </li>
@@ -104,9 +111,42 @@
                             </div>
                         </div>
                     </div>
-                </div> 
+             <!--fermeture de la 1ère row-->
+            </div> 
+            <!--Bee Happy Culteur-->
             <div class="row">
-                <div class="rien col-md-12">
+               <div class="col-md-4" no></div>
+                <div  id="card" class="card4" class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="image-flip" >
+                        <div class="mainflip flip-0">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="./assets/img/api.jpg" alt="bee happy culture" title="Apiculture"></p>
+                                        <h4 class="card-title">Bee Happy Culture</h4>
+                                        <a href="<?php echo LOCAL_URL;?>/index?page=api" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                           <a id="cards" href="<?php echo LOCAL_URL;?>/index?page=api">
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Bee Happy culture</h4>
+                                        <p class="card-text">Espace dédié à Apiculture.</p>
+                                        <br>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" href="<?php echo LOCAL_URL;?>/index?page=api">
+                                                    <button class="ensavoirplus">En savoir plus</button>
+                                                </a></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--Playful Park Of Family-->
@@ -143,9 +183,10 @@
                             </div>
                         </div>
                     </div>
+                    <!--fermeture de la  row-->
                 </div>
             </div>
         </section>
     </div>
 </div>
-
+</div>

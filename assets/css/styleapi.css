@@ -1,0 +1,175 @@
+/*****************Bee Happy culture************************/
+/*************Animation Abeille****************/
+.btn-primary {
+	font-family: Open Sans;
+font-size: 20px;
+font-weight: lighter;
+width: 100%;
+border:0px;
+border-radius: 50px 50px 0px 0px;
+}
+.btn-primary .flying-bee {
+height: 50px;
+width: 100%;
+}
+.btn-primary .flying-bee .bee {
+animation: fly 1s linear infinite;
+}
+.btn-primary .flying-bee .bee .antenna {
+fill: none;
+stroke: #fff;
+stroke-linecap: round;
+stroke-miterlimit: 10;
+stroke-width: 2px;
+}
+.btn-primary .flying-bee .bee .back-wing {
+animation: back-fly 1s linear infinite;
+transform-origin: 400px 400px;
+}
+.btn-primary .flying-bee .bee .front-wing {
+animation: front-fly 1s linear infinite;
+transform-origin: 400px 400px;
+}
+.btn-primary .flying-bee .flight-path {
+fill: none;
+stroke: #fff;
+stroke-width: 8;
+stroke-dasharray: 100;
+stroke-dashoffset: 2000;
+animation: offset 10s linear infinite;
+}
+@keyframes fly {
+33% {
+	transform: translateY(-10px);
+}
+70% {
+	transform: translateY(10px);
+}
+}
+@keyframes offset {
+100% {
+	stroke-dashoffset: 0;
+}
+}
+@keyframes back-fly {
+50% {
+	transform: skewX(13deg);
+}
+}
+@keyframes front-fly {
+50% {
+	transform: skewX(-13deg);
+}
+}
+/*******Réglage du text**********/
+.col-md-6{
+	/* background-color: whitesmoke; */
+	float:right;
+	font-size: 35px;
+}
+.block {
+    display: flex;
+}
+.carousel-item active{
+	border-radius: 50px;
+}
+.carousel-item{
+	border-radius: 50px;
+}
+img{border-radius: 50px;}
+#carouselExampleSlidesOnly{margin-left: 95px;}
+.imgmobile{
+	display: none;
+	margin-left: 10px;
+}
+@media screen and (max-width: 1723px) {
+	p{font-size: 29px;
+		}.br{display: none;}
+}
+@media screen and (max-width: 1655px) {
+	.btn-primary {
+		height:32em;}
+}
+@media screen and (max-width: 1650px) {
+	p{font-size: 29px;}
+}
+@media screen and (max-width: 1600px) {
+
+}
+@media screen and (max-width: 1583px) {
+	.btn-primary {
+		height:30em;} 
+}
+@media screen and (max-width: 1575px) {
+	p{font-size: 28px;
+		margin-top: 61px;}
+.br{display: none;}
+.br2{display: none;}
+}
+@media screen and (max-width: 1523px) {
+	p{font-size: 28px;}
+}
+@media screen and (max-width: 1496px) {
+		.btn-primary {
+			height:28em;} 
+}
+@media screen and (max-width: 1485px) {
+	p{font-size: 25px;}
+}
+@media screen and (max-width: 1453px) {
+	p{font-size: 25px;}
+}
+@media screen and (max-width: 1400px) {
+	p{font-size: 20px;}
+}
+ @media screen and (max-width: 1291px) {
+    .btn-primary {
+		height:25em;}
+} 
+@media screen and (max-width: 1235px) {
+    .imgmobile{
+		display: block !important;
+		margin-left: 30px;}
+	#carouselExampleSlidesOnly {
+		margin-left: 10px;}
+}
+@media screen and (max-width: 1124px) {
+    p{margin-top: 45px;}
+	
+}
+@media screen and (max-width: 1074px) {
+    .imgmobile{
+		margin-left: 10px;}
+	
+}
+@media screen and (max-width: 935px) {
+    .btn-primary {
+		height:24em;}
+	
+}
+@media screen and (max-width: 888px) {
+    .btn-primary {
+		height:22em;}
+		p{margin-top: 25px;}
+	
+}
+@media screen and (max-width: 836px) {
+    .btn-primary {
+		height:22em;}
+		p{margin-top: 5px;
+			font-size: 18px;}
+	
+}
+@media screen and (max-width: 767px) {
+	.imgmobile{
+		margin-left: -8px;}
+	p{font-size: 20px;
+		margin-top: 5px;}
+		.btn-primary {
+			height:40em;}
+	}
+@media screen and (max-width: 537px) {
+	.imgmobile{
+		margin-left: 0px;
+	}
+}

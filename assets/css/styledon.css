@@ -1,0 +1,33 @@
+.decor3{
+    background-position: center;
+    background-image: url(../img/decor1.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.lien, .lien:hover {
+    text-decoration: none;
+    color: #4F1B36;
+}
+.onepage-form.onepage-form-donation {
+background-color: white;
+}
+img#donate {
+    display: block;
+    position: absolute;
+    width: 36em;
+    z-index:-1000;
+}
+@media screen and (max-width: 1050px){
+    img#donate {
+        display: block;
+        position: absolute;
+        width: 20em;
+    }
+    #pk{
+        font-size: 20px;
+    }
+    
+}
+#interligne{
+    line-height: 200%;
+}

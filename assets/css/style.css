@@ -55,7 +55,7 @@ html,body {
         overflow: hidden;
     }
     .imgstop{
-        max-height: 500px;
+        max-height: 565px;
         padding-bottom: 18px;
     }
     @media screen and (min-width: 1235px){
@@ -87,7 +87,7 @@ html,body {
         display: block;
         position: relative;
         /* top: -81px; */
-        bottom: 20em;
+        bottom: 15em;
         left: 3px;
     }
     @media screen and (max-width: 1249px){
@@ -196,7 +196,7 @@ html,body {
 }
 
 #team {
-    padding: 110px 0;
+    padding: 35px 0;
 }
 
 section .section-title {
@@ -304,6 +304,11 @@ section .section-title {
 .card-body{
     margin-top: -10px;
 }
+.card4 {
+    margin-left: 22px;
+    margin-bottom: 103px;
+    margin-top: 10px;
+}
 .card2 {
     margin-left: 20px;
 }
@@ -321,6 +326,15 @@ section .section-title {
     .card3{
         margin-left: 20px;
     }
+.card4 {
+        margin-left: 46px;
+        margin-bottom: 39px;
+        margin-top: 70px;
+    }
+.imgstop {
+    max-height: 35em;
+    padding-bottom: 18px;
+}
     
 }
 @media screen and (max-width: 900px){
@@ -358,6 +372,10 @@ section .section-title {
         .card3{
             margin-left: -1; margin-top: 5em;
         }
+  .card4 {
+            margin-left: 15px;
+            margin-top: 5em;
+        }
     }
     @media screen and (max-width: 893px){
         .card1{
@@ -371,7 +389,12 @@ section .section-title {
             margin-left: 0; margin-top: 5em;
         }
     }
-   
+      @media screen and (max-width: 877px) {
+        .card4 {
+            margin-left: 30px;
+            margin-bottom: 39px;
+            margin-top: 70px;
+        }}
  @media screen and (max-width: 874px){
         #team {
             padding: 0px 0; 
@@ -429,15 +452,22 @@ section .section-title {
         .card3{
             margin-left: 14em;
         }
+  .card4{
+            margin-left: 0px;
+        }
         #team {
             padding: 0px 0; 
         }
         .bg-logo {
             position: relative;
             height: auto;
-            margin-right: 20px;
+            margin-right: -11px;
     }  .rien{display: none;
             height: 0em;}
+.imgstop {
+    max-height: 376px;
+    padding-bottom: 18px;
+}
         
     }
     @media screen and (max-width: 767px){
@@ -450,6 +480,9 @@ section .section-title {
         }
         .card3{
             margin-left: 13.5em; margin-top: 5em;
+        }
+ .card4{
+            margin-left: 15em;
         }
     }
 @media screen and (max-width: 750px){
@@ -465,6 +498,11 @@ section .section-title {
     #team {
         padding: 0px 0; 
     }
+  .bg-logo {
+            position: relative;
+            height: auto;
+            margin-right: 11px;
+    } 
     
 }
 @media screen and (max-width: 727px){
@@ -494,6 +532,9 @@ section .section-title {
     .card3{
         margin-left: 190px;
     }
+  .card4{
+        margin-left: 13.5em;
+    }
     
 }
 @media screen and (max-width: 665px){
@@ -509,7 +550,9 @@ section .section-title {
     .card3{
         margin-left: 178px;
     }
-    
+     .card4{
+        margin-left: 12.5em;
+    }
 }
 @media screen and (max-width: 616px){
     /* #card{
@@ -523,6 +566,9 @@ section .section-title {
     }
     .card3{
         margin-left: 148px;
+    }
+ .card4{
+        margin-left: 10.5em;
     }
     
 }
@@ -538,6 +584,9 @@ section .section-title {
     }
     .card3{
         margin-left: 130px;
+    }
+ .card4{
+        margin-left: 9.5em;
     }
     .bg-logo {
         position: relative;
@@ -557,11 +606,18 @@ section .section-title {
     .card3{
         margin-left: 115px;
     }
+   .card4{
+        margin-left: 8.5em;
+    }
     .bg-logo {
         position: relative;
         height: auto;
         margin-top: 100px;
 } 
+.imgstop {
+    max-height: 17em;
+    padding-bottom: 18px;
+}
       
 }
 @media screen and (max-width: 517px){
@@ -576,6 +632,9 @@ section .section-title {
     }
     .card3{
         margin-left: 118px;
+    }
+ .card4{
+        margin-left: 8.5em;
     }
     .bg-logo {
         position: relative;
@@ -595,10 +654,14 @@ section .section-title {
     .card3{
         margin-left: 98px;
     }
+  .card4{
+        margin-left: 7.5em;
+    }
     .bg-logo {
         position: relative;
         height: auto;
         margin-top: 100px;
+margin-right:31px;
 } }
 @media screen and (max-width: 452px){
     /* #card{
@@ -613,7 +676,9 @@ section .section-title {
     .card3{
         margin-left: 67px;
     }
-  
+   .card4{
+        margin-left: 5.5em;
+    }
     
 } 
 @media screen and (max-width: 420px){
@@ -621,7 +686,7 @@ section .section-title {
         margin-left: 0px;
     } */
     .card1{
-        margin-left: 6em;
+        margin-left: 6.4em;
     }
     .card2{
         margin-left: 5em;
@@ -632,6 +697,11 @@ section .section-title {
   
     
 } 
+@media screen and (max-width: 414px){
+h2.text-center {
+    margin-left: 51px;
+}
+}
 @media screen and (max-width: 411px){
     /* #card{
         margin-left: 0px;
@@ -648,8 +718,6 @@ section .section-title {
     #activites {
         margin-right: -35px;
     }
-  
-    
 }      
 @media screen and (max-width: 400px){
 .card1 {
@@ -664,6 +732,9 @@ section .section-title {
     margin-left: 42px;
     margin-bottom: 50px;
 }
+.card4{
+    margin-left: 4em;
+}
 .onremonte {
     /* display: block; */
     /* position: relative; */
@@ -674,7 +745,19 @@ section .section-title {
     margin-left: 16px;
 }
 }
-
+@media screen and (max-width: 360px){
+    .card1 {
+        margin-left: 70px;
+        margin-bottom: 50px;
+    }
+.imgstop {
+    max-height: 200px;
+    padding-bottom: 18px;
+}
+h2.text-center {
+    margin-left: 47px;
+}
+}
 @media screen and(max-width: 340px){
     .card1 {
         margin-left: 40px;
@@ -775,13 +858,13 @@ section .section-title {
         float: right;
         margin-top: 20px;
     }
-    
     #annotation{
         font-size: 13px;
     }
 
-
 /*Page Debuter*/
+
+
 
 .iframe2 {
     display: block;
@@ -800,15 +883,6 @@ section .section-title {
          height: 400px;
          margin-left: -20em;
     }
-    /* #tonton{
-        margin-left: 39em;
-    }
-    }
-    .iframe2{
-        display: inline-block;
-        width : 700px;
-         height: 400px;
-    } */
     
 }
 
@@ -817,6 +891,13 @@ section .section-title {
         margin-left: 9em;
     }
     .imagform{width: 450px; height: auto;}
+    
+}
+@media screen and (max-width: 909px){
+    .atelier{
+        margin-left: 9em;
+    }
+    .imagform{width: 350px; height: auto;}
     
 }
 @media screen and (max-width: 770px){
@@ -831,11 +912,32 @@ section .section-title {
 .imagform{width: 300px; height: auto;}
     
 }
+@media screen and (max-width: 767px){
+        .imagform{width: 47em; height: auto;}
+}
+@media screen and (max-width: 736px){
+    .imagform{width: 42em; height: auto;}
+    .atelier {
+        margin-left: -6px;
+    }}
+@media screen and (max-width: 673px){
+        .imagform{width: 40em; height: auto;}
+}
+@media screen and (max-width: 640px){
+    .imagform{width: 38em; height: auto;}
+}
+@media screen and (max-width: 544px){
+    .imagform{width: 32em; height: auto;}
+}
+@media screen and (max-width: 473px){
+    .imagform{width: 28em; height: auto;}
+}
+   
 @media screen and (max-width: 414px){
     .form{
         margin-left: 0;
     }
-    .imagform{width: 450px; height: auto;
+    .imagform{width: 300px; height: auto;
     margin-left: 40px;}
     
 .iframe1{
@@ -846,11 +948,9 @@ section .section-title {
     width: 400px;
     height: 300px;
 }
-.imagform{width: 300px; height: auto;}
-  
 .prixformation{
     color:black;
-    margin-left: 40px;
+    margin-left: 0px;
     font-size: 20px;
     text-align: center;
 }
@@ -859,12 +959,12 @@ section .section-title {
 }
 .textformation {
     margin-left: 0px; 
-}
+}}
 @media screen and (max-width: 411px){
     .form{
         margin-left: 0;
     }
-    .imagform{width: 450px; height: auto;
+    .imagform{width: 300px; height: auto;
     margin-left: 40px;}
     
 .iframe1{
@@ -875,11 +975,9 @@ section .section-title {
     width: 400px;
     height: 300px;
 }
-.imagform{width: 300px; height: auto;}
-  
 .prixformation{
     color:black;
-    margin-left: 40px;
+    margin-left: 0px;
     font-size: 20px;
     text-align: center;
 }
@@ -901,7 +999,7 @@ section .section-title {
     .form{
         margin-left: 0;
     }
-    .imagform{width: 287px; height: auto;
+    .imagform{width: 300px; height: auto;
     margin-left: 26px;}
     
 .iframe1{
@@ -911,12 +1009,10 @@ section .section-title {
 .iframe2{
     width: 400px;
     height: 300px;
-}
-.imagform{width: 300px; height: auto;}
-  
+}  
 .prixformation{
     color:black;
-    margin-left: 40px;
+    margin-left: 0px;
     font-size: 20px;
     text-align: center;
 }
@@ -930,13 +1026,23 @@ section .section-title {
     margin-left: 0em;
 }
 }
+@media screen and (max-width: 360px){
+    .imagform {
+        width: 282px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 330px){
+    .imagform {
+        width: 282px;
+        height: auto;
+        margin-left: 21px;
+    }
+}
 @media screen and (max-width: 320px){
     .form{
         margin-left: 0;
     }
-    .imagform{width: 450px; height: auto;
-    margin-left: 40px;}
-    
     .iframe1 {
         width: 350px;
         height: 228px;
@@ -948,51 +1054,12 @@ section .section-title {
 .imagform {
     width: 264px;
     height: auto;
+ margin-left: 14px
 }
   
 .prixformation{
     color:black;
-    margin-left: 20px;
-    font-size: 20px;
-    text-align: center;
-}
-.atelier {
- margin-left: 3em; 
-}
-.textformation {
-    margin-left: 64px; 
-}
-#cequi{
-    margin-left: 2em;
-}
-}
-@media screen and (max-width: 310px){
-    .imagform {
-        width: 219px;
-        height: auto;
-    }
-    .form{
-        margin-left: 0;
-    }
-    .imagform{width: 450px; height: auto;
-    margin-left: 40px;}
-    
-    .iframe1 {
-        width: 350px;
-        height: 228px;
-    }
-.iframe2{
-    width : 380px;
-     height: 300px;
-}
-.imagform {
-    width: 264px;
-    height: auto;
-}
-  
-.prixformation{
-    color:black;
-    margin-left: 20px;
+    margin-left: 0px;
     font-size: 20px;
     text-align: center;
 }
@@ -1000,10 +1067,32 @@ section .section-title {
  margin-left: 0em; 
 }
 .textformation {
-    margin-left: 11px; 
+    margin-left: 0px; 
 }
 #cequi{
     margin-left: 0em;
+}
+}
+@media screen and (max-width: 310px){
+    .form{
+        margin-left: 0;
+    }
+    .imagform{width: 264px; height: auto;
+    margin-left: 12px;}
+    
+    .iframe1 {
+        width: 350px;
+        height: 228px;
+    }
+.iframe2{
+    width : 380px;
+     height: 300px;
+}
+.prixformation{
+    color:black;
+    margin-left: 0px;
+    font-size: 20px;
+    text-align: center;
 }
 }
 /*Fait tout les liens de la page enfaite*/

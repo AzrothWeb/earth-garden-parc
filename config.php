@@ -1,5 +1,6 @@
 <?php 
-        define ("LOCAL_URL", "http://" . $_SERVER['SERVER_NAME'] ."/earthgardenparc");
+        // Création de constante afin de raccourcir les différents liens images, etc ...
+        define ("LOCAL_URL", "http://www.earth-garden-parc.org/");
         // plus pratique de définir le nom de la BDD ici : 
-        define ("NOM_BDD", "earthgardenparc");
+        define ("NOM_BDD", "earthgr732.mysql.db");
     ?>

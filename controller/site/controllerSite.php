@@ -3,8 +3,8 @@ require_once(realpath(__DIR__ . '/../../view/site/header.php'));
 
 function afficherAccueil()
 {
-    require_once(realpath(__DIR__ . '/../../view/site/indexView.php'));
-    require_once(realpath(__DIR__ . '/../../view/site/footer.php'));
+    require_once('./view/site/indexView.php');
+    require_once('./view/site/footer.php');
 }
 
 function afficherNosValeurs()
@@ -41,13 +41,14 @@ function afficherFormations()
 {
     require_once(realpath(__DIR__ . '/../../model/modelPage.php'));
     $nbFormation = recupNbFormations();
-    foreach ($nbFormation as $resultFormation){
-    if ($resultFormation->total != 0) {
-        $allFormations = recupAllFormations();
-        require_once(realpath(__DIR__ . '/../../view/site/formationsView.php'));
-    } else {
-        require_once(realpath(__DIR__ . '/../../view/site/zeroFormationView.php'));
-    }}
+    foreach ($nbFormation as $resultFormation) {
+        if ($resultFormation->total == 0) {
+            require_once(realpath(__DIR__ . '/../../view/site/zeroFormationView.php'));
+        } else {
+            $allFormations = recupAllFormations();
+            require_once(realpath(__DIR__ . '/../../view/site/formationsView.php'));
+        }
+    }
     require_once(realpath(__DIR__ . '/../../view/site/footer.php'));
 }
 function afficherActivites()
@@ -98,6 +99,16 @@ function afficherPlayful()
 function afficherGarden()
 {
     require_once(realpath(__DIR__ . '/../../view/site/gardenView.php'));
+    require_once(realpath(__DIR__ . '/../../view/site/footer.php'));
+}
+function afficherApi()
+{
+    require_once(realpath(__DIR__ . '/../../view/site/apiView.php'));
+    require_once(realpath(__DIR__ . '/../../view/site/footer.php'));
+}
+function afficherLegale()
+{
+    require_once(realpath(__DIR__ . '/../../view/site/legaleView.php'));
     require_once(realpath(__DIR__ . '/../../view/site/footer.php'));
 }
 function afficherFiltreCategory()

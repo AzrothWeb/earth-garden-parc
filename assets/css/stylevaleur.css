@@ -1,0 +1,486 @@
+/*********************************************************Page les valeurs*********************************************/
+/*Haut de page principes*/
+.bg-principe {
+    background-image: url(../img/decor3.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*aside pdf */
+aside {
+    width: 15%;
+    float: left; 
+    /* font-style: italic; */
+    display: inline-grid;
+    position: relative;
+}
+.container-lg{
+    top:20em;
+}
+.lead{
+	font-size: 18px;
+}
+/*Bill Morrison animation*/
+.bill{
+    font-weight: bold;
+    color:#4F1B36;
+    text-align: right;
+}
+.defilewrap{
+    position: relative;
+}
+.defilewrap .defileParent {
+	display: inline-block;
+	overflow: hidden;
+	position: relative; 
+}
+.defilewrap .lettre {
+    display:inline-block;
+    transform-origin: 0 100%;
+	padding:0 10px;
+	text-align:left;
+	height:25px;
+} 
+.liens, .liens:hover {
+    text-decoration: none;
+    color: #4F1B36;
+}
+#textbill{display:none;
+}
+/*FONT  DE NOS VALEURS*/
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+    margin: 5px;
+}
+.colormaj{
+	font-size: 25px;
+    color:#71310D;
+}
+.egp{
+    color:#A2BD4D
+}
+.bg-logo1{
+    display:block;
+    position: relative;
+    height: 1035px;
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+} 
+.bg-logo1::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    z-index: -1;
+    background-image: url(../img/logo_fond_vert_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.4;
+}
+
+
+/*Lettre du président et Plaidoyer*/
+.position{
+    display: block;
+    position: relative;
+	left:8em;
+}
+.president {
+        text-align: center;
+        margin-top: 96px;
+        text-decoration: none;
+    }
+.decor{
+    background-position: center;
+    background-image: url(../img/decor4.gif);
+    height: 200px;
+    width: auto;
+    /* margin-left: 200px; */
+    background-repeat: no-repeat;
+
+}
+.decor2{
+    background-position: center;
+    background-image: url(../img/decor1.png);
+    height: 32em;
+    width: auto;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+/*media de la page valeur pour le background*/
+
+@media screen and (max-width: 1200px){
+    .bg-logo1::after{
+        background: none;}
+     aside {
+                 width: 100%;
+                /* float: left; */
+                /* font-style: italic; */
+                /* display: inline-grid; */
+                position: relative; }
+}
+
+/***************************************/
+.card-body {
+    margin-top: -10px;
+}
+.card-body1 {
+    -ms-flex: 1 1 auto;
+    right: 21em;
+    flex: 1 1 auto;
+    width: 52em;
+    margin: 0em 0.3em;
+border: none;
+}
+.card-body2 {
+    -ms-flex: 1 1 auto;
+    right: 3em;
+    flex: 1 1 auto;
+    width: 60em;
+    margin: 0em 0.3em;
+border: none;
+}
+/*Réglages des formats*/
+@media screen and (max-width: 1744px){
+.card-body1 {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    right:1em;
+    padding: 0.25rem;
+    margin: 0em 0.3em;
+}
+.card-body2 {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0.25rem;
+    right: 0em;
+    margin: 0em 0.3em;
+}}
+@media screen and (max-width: 1743px){
+    .card-body1 {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        right:8em;
+        padding: 0.25rem; 
+         width: 35em;
+        margin: 0em 0.3em;}
+    .card-body2 {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 0.25rem;
+        width: 35em;
+        right: 2em;
+        margin: 0em 0.3em; }
+    .card {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: none;}
+}
+@media screen and (max-width: 1615px){
+        .card-body1 {
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            right:1em;
+            padding: 0.25rem;
+            margin: 0em 0.3em; }
+        .card-body2 {
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            padding: 0.25rem;
+            right: 0em;
+            margin: 0em 0.3em;  }
+        .card {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: none;}
+}
+
+@media screen and (max-width: 1500px){
+.bg-principe {
+    margin-top: 12em;
+}
+ .card-body1 {
+                -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+                right: -11em;
+                padding: 0.25rem;
+                margin: 0em 0.3em; }
+ .card-body2 {
+                -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+                padding: 0.25rem;
+                right: -11em;
+                margin: 0em 0.3em; }
+ .card {
+                position: relative;
+                display: contents;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-color: #fff;
+                background-clip: border-box;
+                border: 1px solid rgba(0,0,0,.125);
+                 border-radius: .25rem;  } 
+.dropdown {
+                  position: relative;
+                  display: inline-block;
+                  margin-top: 0em;
+                  margin-left: 0px; } 
+  aside {
+                 width: 100%;
+                /* float: left; */
+                /* font-style: italic; */
+                /* display: inline-grid; */
+                position: relative;}
+}
+@media screen and (max-width: 1200px){
+       .position{
+    display: block;
+    position: relative;
+     left:0em;}  
+}  
+@media screen and (max-width: 1050px){
+ .position {
+                display: block;
+                position: relative;
+                margin-top: 80px;
+                left:2em;}
+ .bg-principe {
+                    background-image: url(../img/decor3.gif);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    margin-left: 0px; }
+            }
+ @media screen and (max-width: 991px){
+.position {
+       display: block;
+       position: relative;
+       margin-top:75px;
+       left:4em; }
+                }
+@media screen and (max-width: 858px){
+.defilewrap .defileParent .lettre{display:none; }
+#textbill{display:block;
+}
+ .bg-principe {margin-top: 17em; }
+}
+@media screen and (max-width: 776px){
+                .position {
+                    display: block;
+                    position: relative;
+                    margin-top:112px;
+                    left:4em;}
+  }
+@media screen and (max-width: 768px){
+.position {
+         display: block;
+         position: relative;
+         margin-top: 22em;
+         left:4em;}
+}
+ @media screen and (max-width: 678px){
+.position {margin-top: 450px; }
+.back { height: 43em;}
+}
+@media screen and (max-width: 638px){
+ .position {margin-top: 360px;}
+}
+@media screen and (max-width: 600px){
+.position {
+          margin-top: 450px;
+         left: 1em; }
+.bg-principe {
+            background-image: url(../img/decor3.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin-left: 0px;}            
+} 
+ @media screen and (max-width: 581px){
+ .back {
+       background-position: center;
+       background-image: url(../img/decor1.png);
+       height: 43em;
+       width: auto;
+       background-repeat: no-repeat;
+       text-align: center; }
+}
+@media screen and (max-width: 556px){
+.back {
+       background-position: center;
+       background-image: url(../img/decor1.png);
+       height: 51em;
+       width: auto;
+       background-repeat: no-repeat;
+       text-align: center; }
+    }
+@media screen and (max-width: 560px){
+  .position { margin-top: 22em; }
+  .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-top: 0em;
+        margin-left: 0px;} 
+ }
+@media screen and (max-width: 545px){
+ .position {margin-top: 25em;}
+}
+ @media screen and (max-width: 510px){
+ .position { margin-top: 28em;}
+}
+@media screen and (max-width: 484px){
+.position { margin-top: 32em;}
+}
+@media screen and (max-width: 475px){
+.position { margin-top: 35em;}
+}
+@media screen and (max-width: 471px){
+ .back {
+     background-position: center;
+     background-image: url(../img/decor1.png);
+     height: 60em;
+     width: auto;
+     background-repeat: no-repeat;
+      text-align: center; }
+ .position { margin-top: 37em;}
+ }
+ @media screen and (max-width: 452px){
+                    .position {
+                        margin-top: 600px;}
+}
+ @media screen and (max-width: 449px){
+         .bg-principe {  margin-top: 22em;}
+}
+@media screen and (max-width: 424px){
+                            .position {
+                                margin-top: 680px; }
+}
+@media screen and (max-width: 414px){
+                                .position {
+                                    margin-top: 45em;}
+}
+@media screen and (max-width: 413px){
+  .bg-principe {  margin-top: 27em;}
+}
+@media screen and (max-width: 412px){
+                                .position {
+                                    margin-top: 703px;}
+}
+@media screen and (max-width: 400px){
+  .position {
+ margin-top: 750px; }
+ }
+@media screen and (max-width: 395px){
+.position {
+margin-top: 900px;}
+ }
+@media screen and (max-width: 387px){
+       .bg-principe {  margin-top: 31em;}
+}
+@media screen and (max-width: 381px){
+.back {
+ background-position: center;
+ background-image: url(../img/decor1.png);
+ height: 72em;
+ width: auto;
+ background-repeat: no-repeat;
+ text-align: center;}
+}
+@media screen and (max-width: 375px){
+ .position {
+ margin-top:59em; }
+}
+@media screen and (max-width: 373px){
+ .position { margin-top: 1050px; }
+}
+@media screen and (max-width: 364px){
+ .position {margin-top: 1100px; }
+}
+@media screen and (max-width: 360px){
+ .position {margin-top: 965px; }
+
+#principe{ font-size: 20px;  }
+
+.defile{font-size: 20px; }
+  }
+@media screen and (max-width: 350px){
+ .position {margin-top: 1200px; }
+
+  #principe{ font-size: 20px;}
+
+ .defile{ font-size: 20px;}
+ }
+@media screen and (max-width: 341px){
+.back {
+        background-position: center;
+        background-image: url(../img/decor1.png);
+        height: 80em;
+        width: auto;
+        background-repeat: no-repeat;
+        text-align: center; }
+.position{margin-top: 1200px; }
+}
+@media screen and (max-width: 314px){
+.position{margin-top: 1270px; }
+@media screen and (max-width: 298px){
+.back {
+       background-position: center;
+       background-image: url(../img/decor1.png);
+       height: 85em;
+       width: auto;
+       background-repeat: no-repeat;
+       text-align: center;}
+}
+@media screen and (max-width: 294px){
+.position {
+          margin-top: 1333px;}
+                
+}
+@media screen and (max-width: 291px){
+.position {margin-top: 1333px;}
+  }
+@media screen and (max-width: 275px){
+.position {margin-top: 1500px;/*aqui*/}
+  }
+@media screen and (max-width: 271px){
+.back {
+background-position: center;
+background-image: url(../img/decor1.png);
+height: 95em;
+width: auto;
+background-repeat: no-repeat;
+text-align: center;}
+}
+@media screen and (max-width: 261px){
+ .position {margin-top: 1600px;}
+}
+@media screen and (max-width: 255px){
+.position {margin-top: 1700px; }
+ }
+@media screen and (max-width: 247px){
+ .position { margin-top: 1800px; }
+  }
+@media screen and (max-width: 246px){
+  .bg-principe {  margin-top: 33em;}
+  }

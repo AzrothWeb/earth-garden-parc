@@ -1,3 +1,4 @@
+<!--Quand on click sur le bouton voir plus d'une activité-->
 <div class="container">
     <?php foreach ($resultatActivite as $resAct) ?>
     <h1 class="text-center"><?php echo $resAct->titre_article ?></h1>

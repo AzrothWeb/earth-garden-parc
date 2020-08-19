@@ -1,26 +1,30 @@
+
+<!--Fermeture de la DIV LG-->
 </div>
+<link rel="stylesheet" type="text/css" href="<?php echo LOCAL_URL;?>/assets/css/stylebene.css">
+<!--Arbre sur le coté-->
 <div class="row">
         <img src="<?php echo LOCAL_URL;?>/assets/img/volontaire-copie.png" alt="volontaire" title="volontaire" width="50%" height="auto" class="imgvolontaire">
-        <!-- <img src="<?php echo LOCAL_URL;?>/assets/img/volontaire-copie2.png" alt="volontaire" title="volontaire" width="50%" height="auto" class="imgvolontaire2"> -->
 </div>
+<!--Phrase d'introduction-->
 <div class='container-lg'>
+        <p>
+            <strong class="egp">Earth Garden-Parc</strong> espace naturel interactif, parc d’exposition, sources d’inspiration, générateur de vocations, vous invite à participer à notre objectif.
+            La permaculture est depuis des années une méthode de culture seine, vivante et propre ! Il est temps de changer l'agriculture intensive au profite de notre santé 
+            et celle des futures générations. <strong class="egp">Earth Garden-Parc </strong>veut montrer l'exemple pour le bien de tous et notre planête.
+        </p>
+        <br><br>
+ <!--Début du grand dropdown-->
 <div class="row">
     <div class="container"> 
       <div class="text-sm-center">
           <h2>
-            <a class="lien" data-toggle="collapse" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
-            Charte des Bénévoles Associatifs
-            </a>
+          <button class="btn btn-success btn-lg" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Découvrer notre Charte  <i class="fas fa-caret-down"></i></button>
           </h2>
           </div>
       </div>
-    <div class="collapse" id="collapse10">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
         <div class="card card-body align-center">
-     <div class="decor">    
-         <div class="president">
-            <h3 class="text-center"><i>Charte des Bénévoles Dans l'association</i></h3>
-         </div>
-    </div>
             <br>
             <p class="text-center">
                 Cette charte définit le cadre des relations et des règles du jeu qui doivent s’instituer entre les responsables de l’association, les salariés permanents et les bénévoles. 
@@ -88,18 +92,20 @@
                 </p>
            <br><br>
             <div class="text-center">
-                <a class="btn btn-secondary" target="_blank" href="../assets/pdf/charte.pdf">Charte de l'Association</a>
+                <a class="btn btn-outline-success" data-toggle="tab" target="_blank" href="./pdf/charte.pdf">Charte de l'Association <i class="fa fa-download" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
-<br>
-<!--Accordeon des petites choses à savoir-->
-   <div class="col-12">
+    <!--Fin du grand dropdown-->
+    <!--Important pour l'espacement-->
+<br><br><br><br><br><br>
+<!--Début des petits Accordéons-->
+<div class="col-md-12">
     <div class="accordion" id="accordionExample">
         <div class="card" style="background-color:whitesmoke">
             <div class="card-header" id="headingOne">
                 <h2>
-                    <button class="btn btn-link btn-block text-left collapsed" id="link"type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <button class="btn btn-link btn-block text-left collapsed accordion0" id="link"type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     Généralités
                     </button>
                 </h2>
@@ -116,7 +122,7 @@
         <div class="card">
             <div class="card-header" id="headingTwo">
                 <h2>
-                    <button id="link"class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button id="link"class="btn btn-link btn-block text-left collapsed accordion0" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Qu'est-ce que le Bénévolat ?
                     </button>
                  </h2>
@@ -138,7 +144,7 @@
     <div class="card" style="background-color:whitesmoke">
         <div class="card-header" id="headingThree">
         <h2 class="mb-0">
-            <button id="link" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button id="link" class="btn btn-link btn-block text-left collapsed accordion0" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
             Des informations pour vous sensibiliser...
             </button>
         </h2>
@@ -155,7 +161,7 @@
     <div class="card">
         <div class="card-header" id="headingFour">
             <h2 class="mb-0">
-                <button id="link"class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                <button id="link"class="btn btn-link btn-block text-left collapsed accordion0" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
                 La responsabilité civile
                 </button>
             </h2>
@@ -172,7 +178,7 @@
     <div class="card"style="background-color:whitesmoke">
         <div class="card-header" id="headingFive">
             <h2 class="mb-0">
-                <button id="link" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+                <button id="link" class="btn btn-link btn-block text-left collapsed accordion0" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
                 La responsabilité pénale
                 </button>
             </h2>
@@ -186,7 +192,7 @@
     <div class="card">
         <div class="card-header" id="headingSix">
             <h2 class="mb-0">
-                <button id="link" class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
+                <button id="link" class="btn btn-link btn-block text-left collapsed accordion0" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
                 La responsabilité financière
                 </button>
             </h2>
@@ -217,3 +223,14 @@
 </div>
 
 <br><br><br><br>
+<!-- + et - dans les accordéons-->
+<script>
+var acc = document.getElementsByClassName("accordion0");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+  });
+}
+</script>
